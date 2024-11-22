@@ -4,15 +4,15 @@ using UnityEngine;
 
 namespace Battle
 {
-    public class ThiefStats : PartyMemberStats
+    public class GauchoStats : PartyMemberStats
     {
         protected PartyMember member;
         protected int level;
 
         // PartyMemberStats
-        public override int BaseMaxHP => level * 9;
-        public override int BaseSTR => 5 + (int)(level * 1.5);
-        public override int BaseARM => 5 + (int)(level * 1.5);
+        public override int BaseMaxHP => level * 6;
+        public override int BaseSTR => level;
+        public override int BaseARM => 5 + (level + 1);
         public override int BaseSPD => level * 2;
 
         // BattleStats
@@ -22,30 +22,30 @@ namespace Battle
         public override int STR => member.EquippedWeapon is null ? BaseSTR : BaseSTR + member.EquippedWeapon.StrBonus;
         public override int ARM => member.EquippedArmor is null ? BaseARM : BaseARM + member.EquippedArmor.ArmBonus;
         public override int SPD => BaseSPD;
-        public int Stealth { get; private set; }
+        public int MP { get; private set; }
 
-        public ThiefStats(PartyMember member, int level)
+        public GauchoStats(PartyMember member, int level)
         {
             this.member = member;
             this.level = level;
             this.hp = BaseMaxHP;
-            this.Stealth = level * 2;
+            this.MP = level * 10;
         }
 
-        public void GainStealth(int amount)
+        public void GainMP(int amount)
         {
             if (amount <= 0)
                 return;
 
-            Stealth = Mathf.Min(Stealth + amount, Level * 2);
+            MP = Mathf.Min(MP + amount, (Level*10));
         }
 
-        public void LoseStealth(int amount)
+        public void LoseMP(int amount)
         {
             if (amount <= 0)
                 return;
 
-            Stealth = Mathf.Max(Stealth - amount, 0);
+            MP = Mathf.Max(MP - amount, 0);
         }
     }
 }

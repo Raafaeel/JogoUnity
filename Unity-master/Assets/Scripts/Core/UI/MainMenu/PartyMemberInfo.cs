@@ -62,14 +62,14 @@ namespace Core
 
         private string DisplaySpecialStat()
         {
-            if (stats is FighterStats fighterStats)
-                return $"Rage: {fighterStats.Rage}";
+            if (stats is GarouStats GarouStats)
+                return $"Rage: {GarouStats.Rage}";
 
-            else if (stats is MageStats mageStats)
-                return $"MP: {mageStats.MP}/{mageStats.Level * 10}";
+            else if (stats is GauchoStats GauchoStats)
+                return $"MP: {GauchoStats.MP}/{GauchoStats.Level * 10}";
 
-            else if (stats is ThiefStats thiefStats)
-                return $"Stealth: {thiefStats.Stealth}/{thiefStats.Level * 2}";
+            else if (stats is BanditoStats BanditoStats)
+                return $"Stealth: {BanditoStats.Stealth}/{BanditoStats.Level * 2}";
 
             Debug.LogWarning("No special stat found!");
             return "";

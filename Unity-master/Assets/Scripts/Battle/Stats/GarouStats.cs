@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace Battle
 {
-    public class FighterStats : PartyMemberStats
+    public class GarouStats : PartyMemberStats
     {
         protected PartyMember member;
         protected int level;
@@ -25,7 +25,7 @@ namespace Battle
         public override int SPD => BaseSPD;
         public int Rage { get; private set; }
 
-        public FighterStats(PartyMember member, int level)
+        public GarouStats(PartyMember member, int level)
         {
             this.member = member;
             this.level = level;
