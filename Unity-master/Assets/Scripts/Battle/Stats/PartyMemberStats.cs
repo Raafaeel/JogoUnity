@@ -11,10 +11,10 @@ namespace Battle
         {
             return member.Job switch
             {
-                Job.Fighter => new GarouStats(member, level),
-                Job.BlackMage => new GauchoStats(member, level),
-                Job.WhiteMage => new GauchoStats(member, level),
-                Job.Thief => new BanditoStats(member, level),
+                Job.Garou => new GarouStats(member, level),
+                Job.Farrapo => new GauchoStats(member, level),
+                Job.Chimango => new GauchoStats(member, level),
+                Job.Bandito => new BanditoStats(member, level),
                 _ => new GarouStats(member, level),
             };
         }

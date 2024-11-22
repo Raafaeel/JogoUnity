@@ -37,9 +37,9 @@ namespace Core
 
     public enum Job
     {
-        Fighter,
-        BlackMage,
-        WhiteMage,
-        Thief,
+        Garou,
+        Farrapo,
+        Chimango,
+        Bandito,
     }
 }
