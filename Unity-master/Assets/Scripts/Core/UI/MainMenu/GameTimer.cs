@@ -1,30 +1,53 @@
 using UnityEngine;
+using UnityEngine.UI;
 
-public class GameTimer : MonoBehaviour
+public class Timer : MonoBehaviour
 {
-    private float startTime;
-    private bool isRunning;
+    // Variáveis para controlar o tempo
+    private float elapsedTime = 0f; // Tempo decorrido
+    private bool isRunning = false; // Indica se o contador está ativo
 
-    public float ElapsedTime
+    // Referência opcional para exibir o tempo em uma UI de texto
+    public Text timerText;
+
+    void Update()
     {
-        get
+        // Atualiza o tempo apenas se o contador estiver ativo
+        if (isRunning)
         {
-            if (isRunning)
-            {
-                return Time.time - startTime;
-            }
-            return 0f;
+            elapsedTime += Time.deltaTime; // Incrementa o tempo decorrido
+            UpdateTimerDisplay(); // Atualiza o texto da UI
         }
     }
 
+    // Inicia o contador
     public void StartTimer()
     {
-        startTime = Time.time;
         isRunning = true;
     }
 
+    // Para o contador
     public void StopTimer()
     {
         isRunning = false;
+    }
+
+    // Reinicia o contador
+    public void ResetTimer()
+    {
+        elapsedTime = 0f;
+        UpdateTimerDisplay();
+    }
+
+    // Formata o tempo decorrido como texto
+    private void UpdateTimerDisplay()
+    {
+        if (timerText != null)
+        {
+            // Converte o tempo para o formato MM:SS
+            int minutes = Mathf.FloorToInt(elapsedTime / 60F);
+            int seconds = Mathf.FloorToInt(elapsedTime % 60F);
+            timerText.text = string.Format("{0:00}:{1:00}", minutes, seconds);
+        }
     }
 }
