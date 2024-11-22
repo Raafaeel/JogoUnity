@@ -127,6 +127,8 @@ namespace Core
             SetMenuState(MenuState.EquipMemberSelection);
         }
 
+        
+
         private void SetMenuState(MenuState newState)
         {
             CurrentSelector.SelectedIndex = 0;
