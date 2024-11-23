@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b59daec8cb88f264f9b7c01060552f09, type: 3}
   m_Name: BlackWraith
   m_EditorClassIdentifier: 
-  moniker: Black Wraith
+  moniker: Gaucho
   actorPrefab: {fileID: 5176543619620100640, guid: eccb62c21d03c3f478c92bbeb4c38bc6, type: 3}
   menuPortrait: {fileID: 21300000, guid: fb46921ae0c55074bb83e4265da7e5c0, type: 3}
   battlePortrait: {fileID: 5173471364560344175, guid: 544abd05a68341e4e88b9d4bcb6705b1, type: 3}
