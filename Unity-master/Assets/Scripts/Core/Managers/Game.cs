@@ -48,5 +48,26 @@ namespace Core
             Player = Instantiate(playerPrefab).GetComponent<Player>();
             Player.transform.position = startingCell.Center2D();
         }
+
+        private void StartDifficulty()
+    {
+        Difficulty difficulty = DifficultyManager.Instance.GetDifficulty();
+
+        switch (difficulty)
+        {
+            case Difficulty.Easy:
+                // Configuração para fácil
+                Debug.Log("Modo fácil ativo.");
+                break;
+            case Difficulty.Medium:
+                // Configuração para médio
+                Debug.Log("Modo médio ativo.");
+                break;
+            case Difficulty.Hard:
+                // Configuração para difícil
+                Debug.Log("Modo difícil ativo.");
+                break;
+        }
+    }
     }
 }

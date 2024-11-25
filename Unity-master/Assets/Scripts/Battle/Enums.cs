@@ -27,4 +27,11 @@ namespace Battle
         Ally,
         Enemy,
     }
+
+    public enum Difficulty
+    {
+    Easy,
+    Medium,
+    Hard
+    }
 }
