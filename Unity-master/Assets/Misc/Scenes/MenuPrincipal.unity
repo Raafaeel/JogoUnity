@@ -201,7 +201,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 45174643}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1627494197}
+        m_TargetAssemblyTypeName: Gerenciadorcreditos, Scripts
+        m_MethodName: GoTocreditos
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &45174643
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1003,6 +1015,50 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37a5d957496f48f43a414f741b903910, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1667693816
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1667693818}
+  - component: {fileID: 1667693817}
+  m_Layer: 0
+  m_Name: GameManager_Sair
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1667693817
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1667693816}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ef729d9953a3ec4f98819ff0e1fb65d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &1667693818
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1667693816}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 583.86945, y: 662.18604, z: -8.421086}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1948016282
 GameObject:
   m_ObjectHideFlags: 0
@@ -1086,9 +1142,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 11500000, guid: 0be0f0f004cd306438376fd2b0748cbd, type: 3}
-        m_TargetAssemblyTypeName: UnityEngine.Object, UnityEngine
-        m_MethodName: 
+      - m_Target: {fileID: 441737855}
+        m_TargetAssemblyTypeName: GerenciadorComecar, Scripts
+        m_MethodName: GoTodificuldade
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1097,7 +1153,7 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
-        m_CallState: 0
+        m_CallState: 2
 --- !u!114 &1948016285
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1218,7 +1274,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2044117702}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1667693817}
+        m_TargetAssemblyTypeName: BotaoSair, Scripts
+        m_MethodName: QuitGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2044117702
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1341,3 +1409,4 @@ SceneRoots:
   - {fileID: 1627494196}
   - {fileID: 441737856}
   - {fileID: 866542915}
+  - {fileID: 1667693818}
