@@ -1,7 +1,6 @@
 using UnityEngine;
-using Core;
 using Battle;
-
+using Core;
 namespace Battle
 {
 public class DifficultyManager : MonoBehaviour
