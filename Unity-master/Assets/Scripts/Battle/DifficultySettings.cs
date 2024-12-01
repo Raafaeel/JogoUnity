@@ -1,5 +1,6 @@
 using UnityEngine;
 using Battle;
+using Core;
 
 public static class DifficultyConfig
 {

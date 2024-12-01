@@ -1,4 +1,6 @@
 using UnityEngine;
+using Core;
+using Battle;
 
 namespace Battle
 {

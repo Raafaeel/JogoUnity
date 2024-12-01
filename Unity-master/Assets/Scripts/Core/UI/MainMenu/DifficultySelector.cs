@@ -1,10 +1,9 @@
 using UnityEngine;
-using UnityEngine;
 using UnityEngine.UI;
 using Battle;
 namespace Core{
 
- public class DifficultySelector : MonoBehaviour
+ public class DifficultySelector
  {
      public void SetEasy()
      {
