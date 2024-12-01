@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 5176543619620100645}
   - component: {fileID: 6019590251128437772}
   m_Layer: 0
-  m_Name: Satyr
+  m_Name: Samurai
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -79,7 +79,7 @@ SpriteRenderer:
   m_SortingLayerID: -1194760461
   m_SortingLayer: 4
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 981b2bcee98e1614ca4688eeaab8f7ea, type: 3}
+  m_Sprite: {fileID: 1476962810, guid: 4a7db1e3a4001b2479b70134acf094e5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -112,7 +112,7 @@ Animator:
   m_GameObject: {fileID: 5176543619620100640}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 6b9253f9c2f8da945b6c3b06e22743ab, type: 2}
+  m_Controller: {fileID: 9100000, guid: 9366cb2ef0ae63b4981054b350b5758f, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0

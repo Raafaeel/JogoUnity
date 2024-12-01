@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 5176543619620100645}
   - component: {fileID: 816697022021774042}
   m_Layer: 0
-  m_Name: BlackWraith
+  m_Name: Gaucho
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -112,7 +112,7 @@ Animator:
   m_GameObject: {fileID: 5176543619620100640}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: bd28eda5adefdda46a204a0fbb543ff0, type: 2}
+  m_Controller: {fileID: 9100000, guid: 7ecc184b733df0b4fa0ea9035a1239ab, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
