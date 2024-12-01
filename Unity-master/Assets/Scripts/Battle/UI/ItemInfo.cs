@@ -25,10 +25,10 @@ public class ItemInfo : MonoBehaviour
 
     public void UseItem()
     {
-        BattleControl battleControl = GameObject.FindObjectOfType<BattleControl>();
+        BattleControl battleControl = GameObject.FindFirstObjectByType<BattleControl>();
         Ally allyUsingItem = (Ally)battleControl.TurnOrder[battleControl.TurnNumber];
 
-        GameObject.FindObjectOfType<ItemList>().Close();
+        GameObject.FindFirstObjectByType<ItemList>().Close();
         CommandFetcher.CurrentFetcher.SetCommand(new UseItem(allyUsingItem, item));
     }
 }

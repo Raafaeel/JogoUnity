@@ -11,7 +11,7 @@ namespace Core
         public MenuManager(StateManager stateManager)
         {
             this.stateManager = stateManager;
-            this.mainMenu = GameObject.FindObjectOfType<MainMenu>();
+            this.mainMenu = GameObject.FindFirstObjectByType<MainMenu>();
         }
 
         public void OpenMenu()

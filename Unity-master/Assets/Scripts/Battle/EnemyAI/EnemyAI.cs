@@ -11,7 +11,7 @@ namespace Battle
 
         protected virtual void Awake()
         {
-            battleControl = FindObjectOfType<BattleControl>();
+            battleControl = FindFirstObjectByType<BattleControl>();
             actor = GetComponent<Actor>();
         }
 

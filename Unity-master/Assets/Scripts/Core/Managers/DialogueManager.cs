@@ -12,7 +12,7 @@ namespace Core
         public DialogueManager(StateManager stateManager)
         {
             this.stateManager = stateManager;
-            this.dialogueWindow = GameObject.FindObjectOfType<DialogueWindow>();
+            this.dialogueWindow = GameObject.FindFirstObjectByType<DialogueWindow>();
         }
 
         public void StartDialogue(List<DialogueLine> dialogue)

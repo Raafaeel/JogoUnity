@@ -23,7 +23,7 @@ namespace Battle
 
         private void Awake()
         {
-            turnBar = GameObject.FindObjectOfType<TurnBar>();
+            turnBar = GameObject.FindFirstObjectByType<TurnBar>();
             BattleSetup setup = new BattleSetup(turnOrder, allies, enemies, turnBar);
             setup.PerformSetup();
         }
