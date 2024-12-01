@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 5176543619620100645}
   - component: {fileID: 5243030102642897145}
   m_Layer: 0
-  m_Name: Wraith
+  m_Name: EvilWizard
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -79,7 +79,7 @@ SpriteRenderer:
   m_SortingLayerID: -1194760461
   m_SortingLayer: 4
   m_SortingOrder: 0
-  m_Sprite: {fileID: -3084472202944799101, guid: ba449e33e491fe7449e6a410fa459d58, type: 3}
+  m_Sprite: {fileID: 611515982, guid: 847f6ddd74aa02440bcb37350c9d1279, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -112,7 +112,7 @@ Animator:
   m_GameObject: {fileID: 5176543619620100640}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 5ca232c04beaf154cb0316b676b00c1d, type: 2}
+  m_Controller: {fileID: 9100000, guid: d043d271f323d6942bac2732bce13b63, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
