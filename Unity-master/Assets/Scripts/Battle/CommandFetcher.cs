@@ -19,9 +19,9 @@ namespace Battle
         public CommandFetcher(Ally ally)
         {
             this.ally = ally;
-            battleControl = GameObject.FindObjectOfType<BattleControl>();
+            battleControl = GameObject.FindFirstObjectByType<BattleControl>();
             targetSystem = battleControl.GetComponentInChildren<TargetSystem>();
-            commandMenu = GameObject.FindObjectOfType<CommandMenu>();
+            commandMenu = GameObject.FindFirstObjectByType<CommandMenu>();
 
             CurrentFetcher = this;
         }

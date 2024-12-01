@@ -20,7 +20,7 @@ namespace Battle
 
         private void Awake()
         {
-            targetSystem = FindObjectOfType<TargetSystem>();
+            targetSystem = FindFirstObjectByType<TargetSystem>();
             selectorTransform = GetComponent<Transform>();
             CurrentSelection = GetComponentInParent<Actor>().GetComponent<Transform>();
         }

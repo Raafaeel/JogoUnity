@@ -14,9 +14,9 @@ namespace Battle
 
         private void Awake()
         {
-            battleControl = FindObjectOfType<BattleControl>();
+            battleControl = FindFirstObjectByType<BattleControl>();
             rectTransform = GetComponent<RectTransform>();
-            turnBar = FindObjectOfType<TurnBar>();
+            turnBar = FindFirstObjectByType<TurnBar>();
 
             foreach(RectTransform slot in turnBar.Slots)
             {

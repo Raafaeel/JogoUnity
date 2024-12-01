@@ -14,7 +14,7 @@ namespace Battle
         {
             turnBar = GetComponentInParent<TurnBar>();
             rectTransform = GetComponent<RectTransform>();
-            battleControl = FindObjectOfType<BattleControl>();
+            battleControl = FindFirstObjectByType<BattleControl>();
         }
 
         void Update()

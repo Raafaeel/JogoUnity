@@ -21,7 +21,7 @@ namespace Core
      
         private void Awake()
         {
-            currentMap = FindObjectOfType<Map>();
+            currentMap = FindFirstObjectByType<Map>();
             exitCell = currentMap.Grid.GetCell2D(this.gameObject);
         }
 

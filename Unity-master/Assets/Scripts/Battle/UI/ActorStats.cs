@@ -13,7 +13,7 @@ namespace Battle
 
         private void Awake()
         {
-            battleControl = FindObjectOfType<BattleControl>();
+            battleControl = FindFirstObjectByType<BattleControl>();
             actor = GetComponentInParent<Actor>();
         }
 

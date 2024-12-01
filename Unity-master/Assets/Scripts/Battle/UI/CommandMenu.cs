@@ -27,7 +27,7 @@ namespace Battle
         private void Awake()
         {
             rect = GetComponent<RectTransform>();
-            itemList = GameObject.FindObjectOfType<ItemList>();
+            itemList = GameObject.FindFirstObjectByType<ItemList>();
             buttons = GetComponentsInChildren<Button>().ToList();
 
             activeYposition = rect.anchoredPosition.y + 300f;
