@@ -229,9 +229,25 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2077302138899890232, guid: 555b6f02b5c04504ca0a16a7c1042303, type: 3}
+      propertyPath: m_fontSize
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2077302138899890232, guid: 555b6f02b5c04504ca0a16a7c1042303, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2077302138899890232, guid: 555b6f02b5c04504ca0a16a7c1042303, type: 3}
+      propertyPath: 'm_ActiveFontFeatures.Array.data[0]'
+      value: 1801810542
+      objectReference: {fileID: 0}
     - target: {fileID: 2140376231086248085, guid: 555b6f02b5c04504ca0a16a7c1042303, type: 3}
       propertyPath: m_Name
       value: Canvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 8363968968439460486, guid: 555b6f02b5c04504ca0a16a7c1042303, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -0.139
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
