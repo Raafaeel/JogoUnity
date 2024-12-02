@@ -1,13 +1,13 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1102 &-9040422691225930493
+--- !u!1102 &-6600213737630252176
 AnimatorState:
   serializedVersion: 6
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: werewolf_attack
+  m_Name: gauchomau_attack
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -20,20 +20,20 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: c7e78214575a768439cbd671407c46a9, type: 2}
+  m_Motion: {fileID: 7400000, guid: ccec2f32c160f9b499a1b450b9220804, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
   m_TimeParameter: 
---- !u!1102 &-3068137132785519132
+--- !u!1102 &-447778369647372738
 AnimatorState:
   serializedVersion: 6
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: werewolf_attack2
+  m_Name: gauchomau_walking
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -46,33 +46,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: df2f39905b841324f88bb4e408df9e1c, type: 2}
-  m_Tag: 
-  m_SpeedParameter: 
-  m_MirrorParameter: 
-  m_CycleOffsetParameter: 
-  m_TimeParameter: 
---- !u!1102 &-235714712667330775
-AnimatorState:
-  serializedVersion: 6
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: werewolf_idle
-  m_Speed: 0.1
-  m_CycleOffset: 0
-  m_Transitions: []
-  m_StateMachineBehaviours: []
-  m_Position: {x: 50, y: 50, z: 0}
-  m_IKOnFeet: 0
-  m_WriteDefaultValues: 1
-  m_Mirror: 0
-  m_SpeedParameterActive: 0
-  m_MirrorParameterActive: 0
-  m_CycleOffsetParameterActive: 0
-  m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: e7aafb57972311e468f310c39f966a9b, type: 2}
+  m_Motion: {fileID: 7400000, guid: 4aa94589907fbee45b3a082367609d3b, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -84,13 +58,13 @@ AnimatorController:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: werewolf_Controller
+  m_Name: gauchomau_controller
   serializedVersion: 5
   m_AnimatorParameters: []
   m_AnimatorLayers:
   - serializedVersion: 5
     m_Name: Base Layer
-    m_StateMachine: {fileID: 6762865477609418680}
+    m_StateMachine: {fileID: 3036122783344686933}
     m_Mask: {fileID: 0}
     m_Motions: []
     m_Behaviours: []
@@ -100,14 +74,14 @@ AnimatorController:
     m_IKPass: 0
     m_SyncedLayerAffectsTiming: 0
     m_Controller: {fileID: 9100000}
---- !u!1102 &3387525334724053155
+--- !u!1102 &1711415253975876321
 AnimatorState:
   serializedVersion: 6
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: werewolf_dead
+  m_Name: gauchomau_idle
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -120,13 +94,13 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: c6c346f4c95da2f4d92a5d6ce216896f, type: 2}
+  m_Motion: {fileID: 7400000, guid: 6bd00263514084548ad0a4d9acd0adc9, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
   m_TimeParameter: 
---- !u!1107 &6762865477609418680
+--- !u!1107 &3036122783344686933
 AnimatorStateMachine:
   serializedVersion: 6
   m_ObjectHideFlags: 1
@@ -136,38 +110,35 @@ AnimatorStateMachine:
   m_Name: Base Layer
   m_ChildStates:
   - serializedVersion: 1
-    m_State: {fileID: -9040422691225930493}
-    m_Position: {x: 210, y: 420, z: 0}
+    m_State: {fileID: 1711415253975876321}
+    m_Position: {x: 150, y: 220, z: 0}
   - serializedVersion: 1
-    m_State: {fileID: -235714712667330775}
-    m_Position: {x: 210, y: 230, z: 0}
+    m_State: {fileID: -447778369647372738}
+    m_Position: {x: 150, y: 280, z: 0}
   - serializedVersion: 1
-    m_State: {fileID: 7467944876465098513}
-    m_Position: {x: 210, y: 290, z: 0}
+    m_State: {fileID: -6600213737630252176}
+    m_Position: {x: 150, y: 340, z: 0}
   - serializedVersion: 1
-    m_State: {fileID: 3387525334724053155}
-    m_Position: {x: 210, y: 360, z: 0}
-  - serializedVersion: 1
-    m_State: {fileID: -3068137132785519132}
-    m_Position: {x: 210, y: 480, z: 0}
+    m_State: {fileID: 3517089032854028646}
+    m_Position: {x: 150, y: 400, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions: []
   m_EntryTransitions: []
   m_StateMachineTransitions: {}
   m_StateMachineBehaviours: []
-  m_AnyStatePosition: {x: 40, y: 50, z: 0}
-  m_EntryPosition: {x: 40, y: 120, z: 0}
+  m_AnyStatePosition: {x: 50, y: 20, z: 0}
+  m_EntryPosition: {x: 50, y: 120, z: 0}
   m_ExitPosition: {x: 800, y: 120, z: 0}
   m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}
-  m_DefaultState: {fileID: -235714712667330775}
---- !u!1102 &7467944876465098513
+  m_DefaultState: {fileID: 1711415253975876321}
+--- !u!1102 &3517089032854028646
 AnimatorState:
   serializedVersion: 6
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: werewolf_walking
+  m_Name: gauchomau_dead
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -180,7 +151,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 339933887246af64094da8b8477990cd, type: 2}
+  m_Motion: {fileID: 7400000, guid: 3e475f65eeb262542b35c589fd1f4ba7, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 

@@ -33,14 +33,14 @@ namespace Battle
             else
                 targetPosition = defenderTransform.position + attackOffset;
 
-            attacker.Animator.Play("Moving");
+            attacker.Animator.Play("walking");
             while(attackerTransform.position != targetPosition)
             {
                 attackerTransform.position = Vector3.MoveTowards(attackerTransform.position, targetPosition, moveSpeed);
                 yield return null;
             }
 
-            attacker.Animator.Play("Attack");
+            attacker.Animator.Play("attack");
             while(attacker.Animator.IsAnimating())
                 yield return null;
             attacker.Animator.Play("Idle");

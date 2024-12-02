@@ -26,7 +26,7 @@ namespace Battle
         public IEnumerator Co_Execute()
         {
             spriteRenderer.flipX = true;
-            animator.Play("Moving");
+            animator.Play("walking");
 
             Vector2 targetPosition = new Vector2(-10, 0);
 
