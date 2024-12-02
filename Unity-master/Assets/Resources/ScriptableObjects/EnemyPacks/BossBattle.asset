@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: BossBattle
   m_EditorClassIdentifier: 
   enemies:
+  - {fileID: 11400000, guid: 7758f81a4f837de4c8970afc5140e255, type: 2}
   - {fileID: 11400000, guid: 2af625a17c2b43a43b6249967a3501e3, type: 2}
+  - {fileID: 11400000, guid: 7758f81a4f837de4c8970afc5140e255, type: 2}
   xSpawnCoordinates: []
   ySpawnCoordinates: []
