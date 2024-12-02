@@ -5,6 +5,6 @@ public class VoltarMenu : MonoBehaviour
 {
     public void GoToMenuPrincipal()
     {
-        SceneManager.LoadScene("MenuPrincipal"); // Troca para a cena "MenuPrincipal"
+        SceneManager.LoadScene("1 (Tela Principal)"); // Troca para a cena "MenuPrincipal"
     }
 }

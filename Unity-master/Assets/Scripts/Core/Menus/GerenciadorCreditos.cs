@@ -5,6 +5,6 @@ public class Gerenciadorcreditos : MonoBehaviour
 {
     public void GoTocreditos()
     {
-        SceneManager.LoadScene("creditos"); // Carrega a cena "créditos"
+        SceneManager.LoadScene("3 (creditos)"); // Carrega a cena "créditos"
     }
 }

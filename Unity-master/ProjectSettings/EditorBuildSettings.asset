@@ -8,27 +8,27 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Misc/Scenes/LoadGame.unity
     guid: 22e7109822a69404686c8a9177e5f2a3
-  - enabled: 0
-    path: Assets/Misc/Scenes/Empty.unity
-    guid: 50dcf07adfa6a4f47a80e2478717e731
+  - enabled: 1
+    path: Assets/Misc/Scenes/1 (Tela Principal).unity
+    guid: 43b85d462e5ec894287a9074f314b245
+  - enabled: 1
+    path: Assets/Misc/Scenes/3 (creditos).unity
+    guid: ffb5cb2d2230ce546a3c9efe001cda9d
+  - enabled: 1
+    path: Assets/Misc/Scenes/2 (dificuldade).unity
+    guid: 2288babf9f8113744b9e72a0b70f9434
   - enabled: 1
     path: Assets/Misc/Scenes/Battle.unity
     guid: d95d4d2127da62b4f8b5bf3f05911570
-  - enabled: 0
-    path: Assets/Misc/Scenes/TestScene.unity
-    guid: 030c878f23a735949829f0a3d501e10b
   - enabled: 1
-    path: Assets/Misc/Scenes/MenuPrincipal.unity
-    guid: 43b85d462e5ec894287a9074f314b245
+    path: Assets/Misc/Scenes/BattleLocation1.unity
+    guid: f3d3aeb8187cfbc45bd2683149aac011
   - enabled: 1
-    path: Assets/Misc/Scenes/Vitoria.unity
+    path: Assets/Misc/Scenes/BattleLocation2.unity
+    guid: 658576fa8ccb78546b4e68e022d88a5c
+  - enabled: 1
+    path: Assets/Misc/Scenes/BattleVictory.unity
     guid: c61d6f47152c1ae40b6eff47a3aa8948
-  - enabled: 1
-    path: Assets/Misc/Scenes/dificuldade.unity
-    guid: 2288babf9f8113744b9e72a0b70f9434
-  - enabled: 1
-    path: Assets/Misc/Scenes/creditos.unity
-    guid: ffb5cb2d2230ce546a3c9efe001cda9d
   - enabled: 1
     path: Assets/Misc/Scenes/Derrota.unity
     guid: 4930fc65fde6bda41a8806214150f0f2
