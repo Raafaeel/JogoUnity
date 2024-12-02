@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: -753183479853154612}
   - component: {fileID: 9073318841525652798}
   m_Layer: 0
-  m_Name: esqueleto
+  m_Name: FunGuy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -80,7 +80,7 @@ SpriteRenderer:
   m_SortingLayerID: -1194760461
   m_SortingLayer: 4
   m_SortingOrder: 0
-  m_Sprite: {fileID: -7385789195546760866, guid: 1018b0ba13578bf459bd254ae1a2be99, type: 3}
+  m_Sprite: {fileID: 3234629978573100161, guid: f8b30c2afe165d645b54d500a9c30862, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 1
   m_FlipY: 0
@@ -101,7 +101,7 @@ Animator:
   m_GameObject: {fileID: 5176543619620100640}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 8b4725a5d4d21e04ba5891bbc0326c37, type: 2}
+  m_Controller: {fileID: 9100000, guid: cca5d120c70991a4a84053963d81273f, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -231,11 +231,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2077302138899890232, guid: 555b6f02b5c04504ca0a16a7c1042303, type: 3}
       propertyPath: m_fontSize
-      value: 0.75
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 2077302138899890232, guid: 555b6f02b5c04504ca0a16a7c1042303, type: 3}
       propertyPath: m_fontSizeBase
-      value: 0.75
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 2077302138899890232, guid: 555b6f02b5c04504ca0a16a7c1042303, type: 3}
       propertyPath: 'm_ActiveFontFeatures.Array.data[0]'
@@ -246,12 +246,8 @@ PrefabInstance:
       value: Canvas
       objectReference: {fileID: 0}
     - target: {fileID: 8363968968439460486, guid: 555b6f02b5c04504ca0a16a7c1042303, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: -0.016
-      objectReference: {fileID: 0}
-    - target: {fileID: 8363968968439460486, guid: 555b6f02b5c04504ca0a16a7c1042303, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -0.149
+      value: -0.139
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

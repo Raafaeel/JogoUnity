@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: -753183479853154612}
   - component: {fileID: 9073318841525652798}
   m_Layer: 0
-  m_Name: garouRed
+  m_Name: GarouRed
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
