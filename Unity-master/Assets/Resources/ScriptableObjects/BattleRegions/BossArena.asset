@@ -9,15 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 209f55e9a911d6545b83312d379201ab, type: 3}
-  m_Name: Greater Slime
+  m_Script: {fileID: 11500000, guid: 5903e4c97ac48bd47bfeb7282f773257, type: 3}
+  m_Name: BossArena
   m_EditorClassIdentifier: 
-  actorPrefab: {fileID: 0}
-  stats:
-    level: 3
-    baseHp: 45
-    baseMaxHp: 45
-    baseStr: 10
-    baseArm: 10
-    baseSpd: 3
-  battlePortrait: {fileID: 0}
+  encounterChancePerStep: 0
+  enemyPacks:
+  - {fileID: 11400000, guid: a4094b7bbff8bb14982142c1c8a15427, type: 2}
+  packEncounterRate: 

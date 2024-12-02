@@ -9,15 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 209f55e9a911d6545b83312d379201ab, type: 3}
-  m_Name: Greater Slime
+  m_Script: {fileID: 11500000, guid: 39dcb28fa3ee6314b996011f16dd6ac5, type: 3}
+  m_Name: BossBattle
   m_EditorClassIdentifier: 
-  actorPrefab: {fileID: 0}
-  stats:
-    level: 3
-    baseHp: 45
-    baseMaxHp: 45
-    baseStr: 10
-    baseArm: 10
-    baseSpd: 3
-  battlePortrait: {fileID: 0}
+  enemies:
+  - {fileID: 11400000, guid: 2af625a17c2b43a43b6249967a3501e3, type: 2}
+  xSpawnCoordinates: []
+  ySpawnCoordinates: []
