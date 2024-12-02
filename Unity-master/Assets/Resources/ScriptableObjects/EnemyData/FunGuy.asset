@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 209f55e9a911d6545b83312d379201ab, type: 3}
-  m_Name: Fun Guy
+  m_Name: FunGuy
   m_EditorClassIdentifier: 
-  actorPrefab: {fileID: 5176543619620100640, guid: e8125daa531cd2040bd458aa0b1944f6, type: 3}
+  actorPrefab: {fileID: 5176543619620100640, guid: 48d570df5adacd64bb766cd4c1e4c8ab, type: 3}
   stats:
     level: 1
     baseHp: 9

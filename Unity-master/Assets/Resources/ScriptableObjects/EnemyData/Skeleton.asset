@@ -10,14 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 209f55e9a911d6545b83312d379201ab, type: 3}
-  m_Name: Greater Slime
+  m_Name: Skeleton
   m_EditorClassIdentifier: 
-  actorPrefab: {fileID: 5176543619620100640, guid: e8125daa531cd2040bd458aa0b1944f6, type: 3}
+  actorPrefab: {fileID: 5176543619620100640, guid: 0566b26b222cb074ab9749639f58f891, type: 3}
   stats:
-    level: 3
-    baseHp: 45
-    baseMaxHp: 45
-    baseStr: 10
-    baseArm: 10
+    level: 2
+    baseHp: 14
+    baseMaxHp: 14
+    baseStr: 5
+    baseArm: 5
     baseSpd: 3
-  battlePortrait: {fileID: 5173471364560344175, guid: 6cb246108200ddf499e2be5ad86f8ec7, type: 3}
+  battlePortrait: {fileID: 5173471364560344175, guid: c8d761d3f51d92f4c948fef73dce7369, type: 3}
