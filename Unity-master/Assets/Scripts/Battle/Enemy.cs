@@ -25,7 +25,7 @@ namespace Battle
         {
             float elapsedTime = 0;
 
-            Animator.Play("Moving");
+            Animator.Play("walking");
             while ((Vector2)transform.position != battlePosition)
             {
                 transform.position = Vector2.Lerp(startingPosition, battlePosition, elapsedTime);
@@ -33,7 +33,7 @@ namespace Battle
                 yield return null;
             }
 
-            Animator.Play("Idle");
+            Animator.Play("idle");
             yield return new WaitForSeconds(.5f);
 
             StartCoroutine(Co_EnemyChooseAction());
@@ -58,25 +58,25 @@ namespace Battle
             float elapsedTime = 0;
             Vector2 currentPosition = transform.position;
 
-            Animator.Play("Moving");
+            Animator.Play("walking");
             while ((Vector2)transform.position != battlePosition)
             {
                 transform.position = Vector2.Lerp(currentPosition, battlePosition, elapsedTime);
                 elapsedTime += Time.deltaTime;
                 yield return null;
             }
-            Animator.Play("Idle");
+            Animator.Play("idle");
             yield return new WaitForSeconds(.5f);
 
             elapsedTime = 0;
-            Animator.Play("Moving");
+            Animator.Play("walking");
             while ((Vector2)transform.position != startingPosition)
             {
                 transform.position = Vector2.Lerp(battlePosition, startingPosition, elapsedTime);
                 elapsedTime += Time.deltaTime;
                 yield return null;
             }
-            Animator.Play("Idle");
+            Animator.Play("idle");
 
             IsTakingTurn = false;
         }
@@ -86,7 +86,7 @@ namespace Battle
         private IEnumerator Co_Die()
         {
             WasDefeated -= OnDeath;
-            Animator.Play("Death");
+            Animator.Play("dead");
             yield return null;
             while (Animator.IsAnimating())
                 yield return null;

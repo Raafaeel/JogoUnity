@@ -43,7 +43,7 @@ namespace Battle
             attacker.Animator.Play("attack");
             while(attacker.Animator.IsAnimating())
                 yield return null;
-            attacker.Animator.Play("Idle");
+            attacker.Animator.Play("idle");
 
             BattleCalculations.AttackDamage(attacker, defender);
 
