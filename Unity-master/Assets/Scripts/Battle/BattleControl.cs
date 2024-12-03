@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 using Core;
+using Battle;
 
 namespace Battle
 {
@@ -37,13 +38,6 @@ private void Awake()
         return;
     }
 
-    // Adicionar os inimigos da EnemyPack na lista de inimigos
-    enemies.AddRange(EnemyPack.Enemies);
-
-    // Adicionar todos os inimigos à ordem de turno
-    turnOrder.AddRange(enemies);
-
-    // Configure o sistema de batalha
     BattleSetup setup = new BattleSetup(turnOrder, allies, enemies, turnBar);
     setup.PerformSetup();
 }
