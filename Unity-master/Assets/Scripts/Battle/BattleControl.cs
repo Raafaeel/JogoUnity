@@ -115,5 +115,7 @@ namespace Battle
             else
                 enemies.Remove(actor as Enemy);
         }
+
+
     }
 }
