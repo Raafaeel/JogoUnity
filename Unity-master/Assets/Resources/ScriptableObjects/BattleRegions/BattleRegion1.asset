@@ -9,12 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 39dcb28fa3ee6314b996011f16dd6ac5, type: 3}
-  m_Name: BossBattle
+  m_Script: {fileID: 11500000, guid: 5903e4c97ac48bd47bfeb7282f773257, type: 3}
+  m_Name: BattleRegion1
   m_EditorClassIdentifier: 
-  enemies:
-  - {fileID: 11400000, guid: 2af625a17c2b43a43b6249967a3501e3, type: 2}
-  xSpawnCoordinates:
-  - 3.3
-  ySpawnCoordinates:
-  - -1
+  encounterChancePerStep: 100
+  enemyPacks:
+  - {fileID: 11400000, guid: 5c9af9cb958cf8c4189fbe9fc5fd4198, type: 2}
+  packEncounterRate: 64000000

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 using Core;
+using Battle;
 
 namespace Battle
 {
@@ -20,13 +21,26 @@ namespace Battle
         public IReadOnlyList<Enemy> Enemies => enemies;
         public bool SetupComplete { get; private set; }
         public int TurnNumber { get; private set; }
+private void Awake()
+{
+    turnBar = GameObject.FindFirstObjectByType<TurnBar>();
 
-        private void Awake()
-        {
-            turnBar = GameObject.FindFirstObjectByType<TurnBar>();
-            BattleSetup setup = new BattleSetup(turnOrder, allies, enemies, turnBar);
-            setup.PerformSetup();
-        }
+    // Obtenha a EnemyPack associada à cena
+    EnemyPackLoader loader = GameObject.FindFirstObjectByType<EnemyPackLoader>();
+    if (loader != null)
+    {
+        EnemyPack = loader.GetEnemyPackForCurrentScene();
+    }
+
+    if (EnemyPack == null)
+    {
+        Debug.LogError("EnemyPack não foi configurada para esta cena.");
+        return;
+    }
+
+    BattleSetup setup = new BattleSetup(turnOrder, allies, enemies, turnBar);
+    setup.PerformSetup();
+}
 
         private void Update()
         {
@@ -115,5 +129,7 @@ namespace Battle
             else
                 enemies.Remove(actor as Enemy);
         }
+
+
     }
 }
