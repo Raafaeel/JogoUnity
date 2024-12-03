@@ -6,9 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Misc/Scenes/LoadGame.unity
-    guid: 22e7109822a69404686c8a9177e5f2a3
-  - enabled: 1
     path: Assets/Misc/Scenes/1 (Tela Principal).unity
     guid: 43b85d462e5ec894287a9074f314b245
   - enabled: 1
@@ -17,6 +14,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Misc/Scenes/2 (dificuldade).unity
     guid: 2288babf9f8113744b9e72a0b70f9434
+  - enabled: 1
+    path: Assets/Misc/Scenes/LoadGame.unity
+    guid: 22e7109822a69404686c8a9177e5f2a3
   - enabled: 1
     path: Assets/Misc/Scenes/Battle.unity
     guid: d95d4d2127da62b4f8b5bf3f05911570
