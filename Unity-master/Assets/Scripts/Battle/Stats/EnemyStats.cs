@@ -7,15 +7,16 @@ namespace Battle
     public class EnemyStats : BattleStats
     {
         [SerializeField] private int level;
-        [SerializeField] private int baseHp;
+        [SerializeField] private int baseHp; 
         [SerializeField] private int baseMaxHp;
         [SerializeField] private int baseStr;
         [SerializeField] private int baseArm;
         [SerializeField] private int baseSpd;
 
+
         public override int Level => level;
 
-        public override int HP => Mathf.Clamp(hp, 0, MaxHP);
+        public override int HP => baseHp; // Retorna o HP atual diretamente
 
         public override int MaxHP => Mathf.RoundToInt(baseMaxHp * DifficultyConfig.GetMultiplierHP());
 
@@ -25,11 +26,12 @@ namespace Battle
 
         public override int SPD => baseSpd; // Velocidade pode não ser afetada pela dificuldade
 
-        private int hp;
-
         private void Awake()
         {
-            hp = MaxHP; // Inicializa HP com base na dificuldade
+            // Inicializa o HP atual com o valor máximo
+            baseHp = MaxHP;
+
+            Debug.Log($"Inimigo criado com HP inicial: {baseHp}/{MaxHP}");
         }
 
         public override void ReduceHP(int amount)
@@ -37,7 +39,8 @@ namespace Battle
             if (amount <= 0)
                 return;
 
-            hp = Mathf.Clamp(hp - amount, 0, MaxHP);
+            baseHp = Mathf.Clamp(baseHp - amount, 0, MaxHP); // Garante que o HP não seja menor que 0
+            Debug.Log($"Inimigo sofreu dano de {amount}. HP atual: {baseHp}/{MaxHP}");
         }
     }
 }
