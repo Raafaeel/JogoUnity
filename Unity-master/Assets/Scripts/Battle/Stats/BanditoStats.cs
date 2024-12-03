@@ -11,7 +11,7 @@ namespace Battle
 
         // PartyMemberStats
         public override int BaseMaxHP => level * 9;
-        public override int BaseSTR => 5 + (int)(level * 1.5);
+        public override int BaseSTR => 6 + (int)(level * 1.5);
         public override int BaseARM => 5 + (int)(level * 1.5);
         public override int BaseSPD => level * 2;
 

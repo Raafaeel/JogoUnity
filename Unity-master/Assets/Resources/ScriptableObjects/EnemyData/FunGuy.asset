@@ -18,6 +18,6 @@ MonoBehaviour:
     baseHp: 9
     baseMaxHp: 9
     baseStr: 4
-    baseArm: 5
+    baseArm: 2
     baseSpd: 2
   battlePortrait: {fileID: 5173471364560344175, guid: dd839e96c3608af44a303af0fb2a8c1a, type: 3}
