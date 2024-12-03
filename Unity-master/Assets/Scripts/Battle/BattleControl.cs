@@ -20,13 +20,33 @@ namespace Battle
         public IReadOnlyList<Enemy> Enemies => enemies;
         public bool SetupComplete { get; private set; }
         public int TurnNumber { get; private set; }
+private void Awake()
+{
+    turnBar = GameObject.FindFirstObjectByType<TurnBar>();
 
-        private void Awake()
-        {
-            turnBar = GameObject.FindFirstObjectByType<TurnBar>();
-            BattleSetup setup = new BattleSetup(turnOrder, allies, enemies, turnBar);
-            setup.PerformSetup();
-        }
+    // Obtenha a EnemyPack associada à cena
+    EnemyPackLoader loader = GameObject.FindFirstObjectByType<EnemyPackLoader>();
+    if (loader != null)
+    {
+        EnemyPack = loader.GetEnemyPackForCurrentScene();
+    }
+
+    if (EnemyPack == null)
+    {
+        Debug.LogError("EnemyPack não foi configurada para esta cena.");
+        return;
+    }
+
+    // Adicionar os inimigos da EnemyPack na lista de inimigos
+    enemies.AddRange(EnemyPack.Enemies);
+
+    // Adicionar todos os inimigos à ordem de turno
+    turnOrder.AddRange(enemies);
+
+    // Configure o sistema de batalha
+    BattleSetup setup = new BattleSetup(turnOrder, allies, enemies, turnBar);
+    setup.PerformSetup();
+}
 
         private void Update()
         {
