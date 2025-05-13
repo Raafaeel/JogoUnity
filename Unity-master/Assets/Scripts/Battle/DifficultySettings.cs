@@ -10,7 +10,6 @@ public static class DifficultyConfig
     {
         switch (currentDifficulty)
         {
-            case Difficulty.Easy: return 0.8f;
             case Difficulty.Medium: return 1.0f;
             case Difficulty.Hard: return 1.5f;
             default: return 1.0f;
@@ -21,7 +20,6 @@ public static class DifficultyConfig
     {
         switch (currentDifficulty)
         {
-            case Difficulty.Easy: return 0.8f;
             case Difficulty.Medium: return 1.0f;
             case Difficulty.Hard: return 1.2f;
             default: return 1.0f;
@@ -32,7 +30,6 @@ public static class DifficultyConfig
     {
         switch (currentDifficulty)
         {
-            case Difficulty.Easy: return 0.8f;
             case Difficulty.Medium: return 1.0f;
             case Difficulty.Hard: return 1.2f;
             default: return 1.0f;
