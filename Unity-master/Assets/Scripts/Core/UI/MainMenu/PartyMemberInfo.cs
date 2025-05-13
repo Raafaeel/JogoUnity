@@ -68,8 +68,8 @@ namespace Core
             else if (stats is GauchoStats GauchoStats)
                 return $"MP: {GauchoStats.MP}/{GauchoStats.Level * 10}";
 
-            else if (stats is BanditoStats BanditoStats)
-                return $"Stealth: {BanditoStats.Stealth}/{BanditoStats.Level * 2}";
+            else if (stats is SamuraiStats SamuraiStats)
+                return $"Stealth: {SamuraiStats.Stealth}/{SamuraiStats.Level * 2}";
 
             Debug.LogWarning("No special stat found!");
             return "";

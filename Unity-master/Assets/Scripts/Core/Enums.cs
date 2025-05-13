@@ -40,6 +40,6 @@ namespace Core
         Garou,
         Farrapo,
         Chimango,
-        Bandito,
+        Samurai,
     }
 }

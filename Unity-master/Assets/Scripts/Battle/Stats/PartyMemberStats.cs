@@ -14,7 +14,7 @@ namespace Battle
                 Job.Garou => new GarouStats(member, level),
                 Job.Farrapo => new GauchoStats(member, level),
                 Job.Chimango => new GauchoStats(member, level),
-                Job.Bandito => new BanditoStats(member, level),
+                Job.Samurai => new SamuraiStats(member, level),
                 _ => new GarouStats(member, level),
             };
         }
