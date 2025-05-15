@@ -1,6 +1,8 @@
 using UnityEngine;
 using UnityEngine.UI;
 using Battle;
+using UnityEngine.SceneManagement;
+
 namespace Core{
 
  public class DifficultySelector
@@ -12,11 +14,13 @@ namespace Core{
      public void SetMedium()
     {
         DifficultyManager.Instance.SetDifficulty(Difficulty.Medium);
+        SceneManager.LoadScene("LoadGame"); // Carrega a cena "créditos"
      }
 
     public void SetHard()
     {
         DifficultyManager.Instance.SetDifficulty(Difficulty.Hard);
+        SceneManager.LoadScene("LoadGame"); // Carrega a cena "LoadScene" que começa o jogo
     }
  }
 
