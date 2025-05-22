@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using Battle;
+using Battle;  // Namespace onde está o enum Difficulty
 using System.Linq;
 
 namespace Core
@@ -18,7 +18,6 @@ namespace Core
         public static MapManager World { get; private set; }
         public static Player Player { get; private set; }
         public static GameState State => stateManager.State;
-
 
         [SerializeField] private Map startingMap;
         [SerializeField] private GameObject playerPrefab;
@@ -50,24 +49,25 @@ namespace Core
         }
 
         private void StartDifficulty()
-    {
-        Difficulty difficulty = DifficultyManager.Instance.GetDifficulty();
-
-        switch (difficulty)
         {
-            case Difficulty.Easy:
-                // Configuração para fácil
-                Debug.Log("Modo fácil ativo.");
-                break;
-            case Difficulty.Medium:
-                // Configuração para médio
-                Debug.Log("Modo médio ativo.");
-                break;
-            case Difficulty.Hard:
-                // Configuração para difícil
-                Debug.Log("Modo difícil ativo.");
-                break;
+            // Acesso ao enum Difficulty através do namespace Battle
+            Difficulty difficulty = DifficultyManager.Instance.currentDifficulty;
+
+            switch (difficulty)
+            {
+                case Difficulty.Easy:
+                    Debug.Log("Dificuldade: Fácil");
+                    // Configurações para fácil
+                    break;
+                case Difficulty.Medium:
+                    Debug.Log("Dificuldade: Médio");
+                    // Configurações para médio
+                    break;
+                case Difficulty.Hard:
+                    Debug.Log("Dificuldade: Difícil");
+                    // Configurações para difícil
+                    break;
+            }
         }
-    }
     }
 }

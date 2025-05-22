@@ -1,41 +1,72 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using System.Collections;
 
-namespace Battle {
-    public class DifficultyManager : MonoBehaviour {
+namespace Battle
+{
+    public enum Difficulty
+    {
+        Easy,
+        Medium,
+        Hard
+    }
+
+    public class DifficultyManager : MonoBehaviour
+    {
         public static DifficultyManager Instance;
         public Difficulty currentDifficulty = Difficulty.Medium;
 
-        private void Awake() {
-            if (Instance == null) {
+        private void Awake()
+        {
+            if (Instance == null)
+            {
                 Instance = this;
                 DontDestroyOnLoad(gameObject);
-                Debug.Log("DifficultyManager inicializado.");
-            } else {
+            }
+            else
+            {
                 Destroy(gameObject);
             }
         }
 
-        public void SetDifficulty(Difficulty difficulty) {
+        public void SetDifficulty(Difficulty difficulty)
+        {
             currentDifficulty = difficulty;
-            Debug.Log("Dificuldade: " + difficulty);
+            StartCoroutine(LoadGameScene());
+        }
 
-            // Verifica se a cena existe antes de carregar
-            if (Application.CanStreamedLevelBeLoaded("LoadGame")) {
-                SceneManager.LoadScene("LoadGame");
-            } else {
-                Debug.LogError("Cena 'LoadGame' não encontrada no Build Settings!");
-                ListAllScenes(); // Mostra todas as cenas disponíveis
+        private IEnumerator LoadGameScene()
+        {
+            const string sceneName = "LoadGame";
+            
+            if (!SceneExists(sceneName))
+            {
+                Debug.LogError("Cena não encontrada: " + sceneName);
+                yield break;
+            }
+
+            AsyncOperation operation = SceneManager.LoadSceneAsync(sceneName);
+            operation.allowSceneActivation = false;
+
+            while (!operation.isDone)
+            {
+                if (operation.progress >= 0.9f)
+                {
+                    operation.allowSceneActivation = true;
+                }
+                yield return null;
             }
         }
 
-        private void ListAllScenes() {
-            Debug.Log("### CENAS DISPONÍVEIS ###");
-            for (int i = 0; i < SceneManager.sceneCountInBuildSettings; i++) {
+        private bool SceneExists(string sceneName)
+        {
+            for (int i = 0; i < SceneManager.sceneCountInBuildSettings; i++)
+            {
                 string scenePath = SceneUtility.GetScenePathByBuildIndex(i);
-                string sceneName = System.IO.Path.GetFileNameWithoutExtension(scenePath);
-                Debug.Log($"Índice {i}: {sceneName}");
+                if (System.IO.Path.GetFileNameWithoutExtension(scenePath) == sceneName)
+                    return true;
             }
+            return false;
         }
     }
 }

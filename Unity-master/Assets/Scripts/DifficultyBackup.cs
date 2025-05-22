@@ -1,4 +1,4 @@
-using UnityEngine;
+/*using UnityEngine;
 using Battle;
 using Core;
 using UnityEngine.SceneManagement;
@@ -39,3 +39,6 @@ public class DifficultyManager : MonoBehaviour
     }
 }
 }
+
+*/
+
