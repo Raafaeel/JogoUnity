@@ -1,20 +1,13 @@
+// Assets/Scripts/Battle/DifficultyManager.cs
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using System.Collections;
 
 namespace Battle
 {
-    public enum Difficulty
-    {
-        Easy,
-        Medium,
-        Hard
-    }
-
     public class DifficultyManager : MonoBehaviour
     {
         public static DifficultyManager Instance;
-        public Difficulty currentDifficulty = Difficulty.Medium;
+        public Difficulty CurrentDifficulty { get; private set; } = Difficulty.Medium;
 
         private void Awake()
         {
@@ -22,6 +15,7 @@ namespace Battle
             {
                 Instance = this;
                 DontDestroyOnLoad(gameObject);
+                Debug.Log("DifficultyManager initialized");
             }
             else
             {
@@ -29,44 +23,20 @@ namespace Battle
             }
         }
 
-        public void SetDifficulty(Difficulty difficulty)
+        public void SetDifficultyAndLoad(Difficulty difficulty)
         {
-            currentDifficulty = difficulty;
-            StartCoroutine(LoadGameScene());
-        }
-
-        private IEnumerator LoadGameScene()
-        {
-            const string sceneName = "LoadGame";
+            CurrentDifficulty = difficulty;
+            Debug.Log($"Difficulty set to: {CurrentDifficulty}");
             
-            if (!SceneExists(sceneName))
+            if (Application.CanStreamedLevelBeLoaded("LoadGame"))
             {
-                Debug.LogError("Cena não encontrada: " + sceneName);
-                yield break;
+                SceneManager.LoadScene("LoadGame");
+                Debug.Log("Loading LoadGame scene");
             }
-
-            AsyncOperation operation = SceneManager.LoadSceneAsync(sceneName);
-            operation.allowSceneActivation = false;
-
-            while (!operation.isDone)
+            else
             {
-                if (operation.progress >= 0.9f)
-                {
-                    operation.allowSceneActivation = true;
-                }
-                yield return null;
+                Debug.LogError("LoadGame scene not found in Build Settings!");
             }
-        }
-
-        private bool SceneExists(string sceneName)
-        {
-            for (int i = 0; i < SceneManager.sceneCountInBuildSettings; i++)
-            {
-                string scenePath = SceneUtility.GetScenePathByBuildIndex(i);
-                if (System.IO.Path.GetFileNameWithoutExtension(scenePath) == sceneName)
-                    return true;
-            }
-            return false;
         }
     }
 }

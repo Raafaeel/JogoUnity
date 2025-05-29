@@ -1,27 +1,10 @@
+// Assets/Scripts/Core/UI/MainMenu/DifficultySelector.cs
 using UnityEngine;
-using UnityEngine.UI;
 using Battle;
-using UnityEngine.SceneManagement;
 
-namespace Core{
-
- public class DifficultySelector
- {
-     public void SetEasy()
-     {
-         DifficultyManager.Instance.SetDifficulty(Difficulty.Easy);
-    }
-     public void SetMedium()
-    {
-        DifficultyManager.Instance.SetDifficulty(Difficulty.Medium);
-        SceneManager.LoadScene("LoadGame"); // Carrega a cena "créditos"
-     }
-
-    public void SetHard()
-    {
-        DifficultyManager.Instance.SetDifficulty(Difficulty.Hard);
-        SceneManager.LoadScene("LoadGame"); // Carrega a cena "LoadScene" que começa o jogo
-    }
- }
-
- }
+public class DifficultySelector : MonoBehaviour
+{
+    public void SelectEasy() => DifficultyManager.Instance.SetDifficultyAndLoad(Difficulty.Easy);
+    public void SelectMedium() => DifficultyManager.Instance.SetDifficultyAndLoad(Difficulty.Medium);
+    public void SelectHard() => DifficultyManager.Instance.SetDifficultyAndLoad(Difficulty.Hard);
+}

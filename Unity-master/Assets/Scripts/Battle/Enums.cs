@@ -28,11 +28,10 @@ namespace Battle
         Enemy,
     }
 
-    /*public enum Difficulty
+    public enum Difficulty
     {
     Easy,
     Medium,
     Hard
     }
-*/
 }
