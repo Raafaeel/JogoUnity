@@ -42,7 +42,8 @@ namespace Core
             Battle = new BattleManager(stateManager);
             Cutscenes = new CutsceneManager(stateManager);
             World = new MapManager(stateManager, startingMap);
-            Difficulty = new DifficultyManager(stateManager);
+            Difficulty = new DifficultyManager();
+            Difficulty.SetStateManager(stateManager);  // Configura o StateManager após criação
         }
 
         private void SpawnPlayer()

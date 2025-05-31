@@ -9,7 +9,7 @@ namespace Battle
         public static DifficultyManager Instance;
         public Difficulty CurrentDifficulty { get; private set; } = Difficulty.Medium;
 
-        private void Awake()
+        /*private void Awake()
         {
             if (Instance == null)
             {
@@ -21,7 +21,7 @@ namespace Battle
             {
                 Destroy(gameObject);
             }
-        }
+        } */
 
         public void SetDifficultyAndLoad(Difficulty difficulty)
         {

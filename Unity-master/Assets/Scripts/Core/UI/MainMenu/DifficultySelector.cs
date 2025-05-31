@@ -1,6 +1,7 @@
 // Assets/Scripts/Core/UI/MainMenu/DifficultySelector.cs
 using UnityEngine;
 using Battle;
+using Core;
 
 public class DifficultySelector : MonoBehaviour
 {
