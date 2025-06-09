@@ -9,31 +9,40 @@ namespace Battle
     public class TargetSelector : MonoBehaviour
     {
         private TargetSystem targetSystem;
-        private IReadOnlyList<Actor> targets;
         private Transform selectorTransform;
-        private Transform CurrentSelection;
+        private Transform currentSelection;
+        private List<Actor> targets = new List<Actor>();
 
-        private Vector2 selectorOffset = new Vector2(0, -1.75f);
-
-        private const float MOVE_SPEED = 40f;
-
+        [SerializeField] private Vector2 selectorOffset = new Vector2(0, -1.75f);
+        [SerializeField] private float moveSpeed = 40f;
+        [SerializeField] private float positionTolerance = 0.01f;
 
         private void Awake()
         {
             targetSystem = FindFirstObjectByType<TargetSystem>();
-            selectorTransform = GetComponent<Transform>();
-            CurrentSelection = GetComponentInParent<Actor>().GetComponent<Transform>();
+            selectorTransform = transform;
+            currentSelection = GetComponentInParent<Actor>().transform;
         }
 
         private void Start()
         {
-            targets = targetSystem.ValidTargets;
+            UpdateTargetList();
         }
 
         private void Update()
         {
-            selectorTransform.localPosition = Vector2.MoveTowards(selectorTransform.localPosition, selectorOffset, MOVE_SPEED * Time.deltaTime);
+            // Smooth movement to target offset
+            selectorTransform.localPosition = Vector2.MoveTowards(
+                selectorTransform.localPosition,
+                selectorOffset,
+                moveSpeed * Time.deltaTime
+            );
 
+            HandleInput();
+        }
+
+        private void HandleInput()
+        {
             if (Input.GetKeyDown(KeyCode.UpArrow))
             {
                 FindSelectionInDirection(Dir.Up);
@@ -52,89 +61,88 @@ namespace Battle
             }
             else if (Input.GetKeyDown(KeyCode.Space))
             {
-                if ((Vector2)selectorTransform.localPosition != selectorOffset)
-                    return;
-
-                targetSystem.Accept(this);
+                // Only accept selection when animation completes
+                if (Vector2.Distance(selectorTransform.localPosition, selectorOffset) < positionTolerance)
+                {
+                    targetSystem.Accept(this);
+                }
             }
-
         }
 
         private void FindSelectionInDirection(Dir dir)
         {
             Actor actorFound = FindActorInDirection(dir);
-            if (actorFound == null)
-                return;
+            if (actorFound == null) return;
 
-            CurrentSelection = actorFound.GetComponent<Transform>();
-            selectorTransform.SetParent(CurrentSelection);
+            currentSelection = actorFound.transform;
+            selectorTransform.SetParent(currentSelection);
+            selectorTransform.localPosition = Vector3.zero;
         }
 
         private Actor FindActorInDirection(Dir direction)
         {
-            List<Actor> actorsFound;
+            UpdateTargetList();
+            if (targets.Count == 0) return null;
+
             switch (direction)
             {
-                case (Dir.Up):
-                    return targets
-                        .Where(actor => actor.transform.position.x == CurrentSelection.transform.position.x)
-                        .Where(actor => actor.transform.position.y > CurrentSelection.transform.position.y)
-                        .OrderBy(actor => actor.transform.position.y)
-                        .FirstOrDefault();
-
-                case (Dir.Down):
-                    return targets
-                        .Where(actor => actor.transform.position.x == CurrentSelection.transform.position.x)
-                        .Where(actor => actor.transform.position.y < CurrentSelection.transform.position.y)
-                        .OrderByDescending(actor => actor.transform.position.y)
-                        .FirstOrDefault();
-
-                case (Dir.Left):
-                    actorsFound = targets
-                        .Where(actor => actor.transform.position.x < CurrentSelection.transform.position.x)
-                        .OrderByDescending(actor => actor.transform.position.x)
-                        .ToList();
-
-                    if (actorsFound.Count == 0)
-                        return null;
-
-                    float highestX = actorsFound.First().transform.position.x;
-
-                    return FindClosestActor(actorsFound.Where(actor => actor.transform.position.x == highestX));
-
-                case (Dir.Right):
-                    actorsFound = targets
-                        .Where(actor => actor.transform.position.x > CurrentSelection.transform.position.x)
-                        .OrderBy(actor => actor.transform.position.x)
-                        .ToList();
-
-                    if (actorsFound.Count == 0)
-                        return null;
-
-                    float lowestX = actorsFound.First().transform.position.x;
-
-                    return FindClosestActor(actorsFound.Where(actor => actor.transform.position.x == lowestX));
+                case Dir.Up:
+                    return FindVerticalTarget(true);
+                case Dir.Down:
+                    return FindVerticalTarget(false);
+                case Dir.Left:
+                    return FindHorizontalTarget(false);
+                case Dir.Right:
+                    return FindHorizontalTarget(true);
                 default:
                     return null;
             }
         }
 
-        private Actor FindClosestActor(IEnumerable<Actor> actors)
+        private Actor FindVerticalTarget(bool findAbove)
         {
-            float closestDistance = float.MaxValue;
-            Actor closestActor = actors.First();
+            float currentY = currentSelection.position.y;
+            float currentX = currentSelection.position.x;
 
-            foreach(Actor actor in actors)
+            IEnumerable<Actor> candidates = targets
+                .Where(actor => Mathf.Abs(actor.transform.position.x - currentX) < positionTolerance)
+                .Where(actor => findAbove 
+                    ? actor.transform.position.y > currentY
+                    : actor.transform.position.y < currentY);
+
+            return findAbove
+                ? candidates.OrderBy(actor => actor.transform.position.y).FirstOrDefault()
+                : candidates.OrderByDescending(actor => actor.transform.position.y).FirstOrDefault();
+        }
+
+        private Actor FindHorizontalTarget(bool findRight)
+        {
+            float currentX = currentSelection.position.x;
+            float currentY = currentSelection.position.y;
+
+            IEnumerable<Actor> candidates = targets
+                .Where(actor => findRight
+                    ? actor.transform.position.x > currentX
+                    : actor.transform.position.x < currentX);
+
+            if (!candidates.Any()) return null;
+
+            float referenceX = findRight
+                ? candidates.Min(actor => actor.transform.position.x)
+                : candidates.Max(actor => actor.transform.position.x);
+
+            return candidates
+                .Where(actor => Mathf.Abs(actor.transform.position.x - referenceX) < positionTolerance)
+                .OrderBy(actor => Mathf.Abs(actor.transform.position.y - currentY))
+                .FirstOrDefault();
+        }
+
+        private void UpdateTargetList()
+        {
+            if (targetSystem != null)
             {
-                float distance = ((Vector2)actor.transform.position - (Vector2)CurrentSelection.transform.position).magnitude;
-                if (distance < closestDistance)
-                {
-                    closestDistance = distance;
-                    closestActor = actor;
-                }
+                targets = new List<Actor>(targetSystem.ValidTargets);
             }
-
-            return closestActor;
         }
     }
 }
