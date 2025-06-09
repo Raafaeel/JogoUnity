@@ -718,6 +718,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7651004910336949964, guid: 9371648e63ab99d42be7175072f36b56, type: 3}
+      propertyPath: m_ChildScaleWidth
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7651004910336949964, guid: 9371648e63ab99d42be7175072f36b56, type: 3}
+      propertyPath: m_ChildScaleHeight
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7651004910336949964, guid: 9371648e63ab99d42be7175072f36b56, type: 3}
+      propertyPath: m_ChildForceExpandWidth
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7651004910336949964, guid: 9371648e63ab99d42be7175072f36b56, type: 3}
+      propertyPath: m_ChildForceExpandHeight
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -991,7 +1007,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 902449739, guid: 523c9dc0f020d734ea6a28cba80a73cc, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -726.8152
+      value: -669.50037
       objectReference: {fileID: 0}
     - target: {fileID: 1564633411, guid: 523c9dc0f020d734ea6a28cba80a73cc, type: 3}
       propertyPath: m_Size
