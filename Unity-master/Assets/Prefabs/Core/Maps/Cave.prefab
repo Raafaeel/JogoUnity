@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2536998717011174454}
   - component: {fileID: 1549155654983044076}
-  - component: {fileID: -2810603696782550641}
+  - component: {fileID: 1572730306641548637}
   m_Layer: 0
   m_Name: Cave
   m_TagString: Untagged
@@ -49,7 +49,7 @@ Grid:
   m_CellGap: {x: 0, y: 0, z: 0}
   m_CellLayout: 0
   m_CellSwizzle: 0
---- !u!114 &-2810603696782550641
+--- !u!114 &1572730306641548637
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -61,7 +61,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a2cb1235f74984248bfdfaacd3138406, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  region: {fileID: 11400000, guid: 6db70e114b5f9d84b975c16bdb8870f3, type: 2}
+  region: {fileID: 11400000, guid: 39371b55aa032284f8ce3f882f9f1533, type: 2}
+  battleSceneIndex: 5
 --- !u!1 &809314886696926151
 GameObject:
   m_ObjectHideFlags: 0
@@ -3880,7 +3881,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: 1
-  newMap: {fileID: 6361842508756545494, guid: ed32f47e57aed74458855f6a6effa570, type: 3}
+  newMap: {fileID: 1572730306641548637}
   destinationId: 1
   offset: {x: 0, y: 1}
 --- !u!1 &5721185280761300349
