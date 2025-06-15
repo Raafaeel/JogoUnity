@@ -272,6 +272,9 @@ public class CutsceneEditor : EditorWindow
         if (command is StartDialogue)
             return new StartDialogue();
 
+        if (command is Core.BattleCommand)
+            return new Core.BattleCommand();    
+
         else
         {
             Debug.LogError($"Couldn't create instance of {command.ToString()}");

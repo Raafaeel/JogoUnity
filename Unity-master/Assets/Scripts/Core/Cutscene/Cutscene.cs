@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -42,6 +43,11 @@ namespace Core
         public void InsertCommand(int index, ICutsceneCommand command) => commands.Insert(index, command);
         public void RemoveAt(int i) => commands.RemoveAt(i);
         public void SwapCommands(int i, int j) => (commands[i], commands[j]) = (commands[j], commands[i]);
-
+        
+        // Novo método para adicionar comando de batalha
+        public void AddBattleCommand()
+        {
+            commands.Add(new BattleCommand());
+        }
     }
 }
