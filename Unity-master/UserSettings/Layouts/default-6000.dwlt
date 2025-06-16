@@ -16,10 +16,10 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 43
-    width: 1280
-    height: 677
+    width: 2560
+    height: 989
   m_ShowMode: 4
-  m_Title: Scene
+  m_Title: Project
   m_RootView: {fileID: 7}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -39,12 +39,12 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 836
+    x: 1612
     y: 0
-    width: 189
-    height: 571
-  m_MinSize: {x: 202, y: 226}
-  m_MaxSize: {x: 4002, y: 4026}
+    width: 409
+    height: 639
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 18}
   m_Panes:
   - {fileID: 18}
@@ -67,8 +67,8 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 305
-    height: 571
+    width: 270
+    height: 639
   m_MinSize: {x: 231, y: 276}
   m_MaxSize: {x: 10001, y: 10026}
   m_ActualView: {fileID: 16}
@@ -95,12 +95,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 36
-    width: 1280
-    height: 621
+    width: 2560
+    height: 933
   m_MinSize: {x: 400, y: 100}
   m_MaxSize: {x: 32384, y: 16192}
   vertical: 0
-  controlID: 69
+  controlID: 135
   draggingID: 0
 --- !u!114 &5
 MonoBehaviour:
@@ -112,24 +112,24 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: GridPaintPaletteWindow
+  m_Name: InspectorWindow
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 1025
+    x: 2021
     y: 0
-    width: 255
-    height: 621
-  m_MinSize: {x: 357, y: 226}
-  m_MaxSize: {x: 4001, y: 4026}
-  m_ActualView: {fileID: 14}
+    width: 539
+    height: 933
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_ActualView: {fileID: 17}
   m_Panes:
   - {fileID: 17}
   - {fileID: 15}
   - {fileID: 14}
-  m_Selected: 2
-  m_LastSelected: 0
+  m_Selected: 0
+  m_LastSelected: 2
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -146,11 +146,11 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 571
-    width: 1025
-    height: 50
-  m_MinSize: {x: 101, y: 126}
-  m_MaxSize: {x: 4001, y: 4026}
+    y: 639
+    width: 2021
+    height: 294
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 21}
   m_Panes:
   - {fileID: 21}
@@ -176,8 +176,8 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1280
-    height: 677
+    width: 2560
+    height: 989
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
   m_UseTopView: 1
@@ -201,7 +201,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1280
+    width: 2560
     height: 36
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
@@ -222,8 +222,8 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 657
-    width: 1280
+    y: 969
+    width: 2560
     height: 20
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
@@ -246,12 +246,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1025
-    height: 621
+    width: 2021
+    height: 933
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 1
-  controlID: 70
+  controlID: 77
   draggingID: 0
 --- !u!114 &11
 MonoBehaviour:
@@ -273,12 +273,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1025
-    height: 571
+    width: 2021
+    height: 639
   m_MinSize: {x: 300, y: 50}
   m_MaxSize: {x: 24288, y: 8096}
   vertical: 0
-  controlID: 71
+  controlID: 78
   draggingID: 0
 --- !u!114 &12
 MonoBehaviour:
@@ -290,24 +290,24 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: SceneView
+  m_Name: GameView
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 305
+    x: 270
     y: 0
-    width: 531
-    height: 571
+    width: 1342
+    height: 639
   m_MinSize: {x: 202, y: 226}
   m_MaxSize: {x: 4002, y: 4026}
-  m_ActualView: {fileID: 19}
+  m_ActualView: {fileID: 20}
   m_Panes:
   - {fileID: 19}
   - {fileID: 20}
   - {fileID: 13}
-  m_Selected: 0
-  m_LastSelected: 1
+  m_Selected: 1
+  m_LastSelected: 2
 --- !u!114 &13
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -329,10 +329,10 @@ MonoBehaviour:
     m_TextWithWhitespace: "Animator\u200B"
   m_Pos:
     serializedVersion: 2
-    x: 291
+    x: 270
     y: 79
-    width: 379
-    height: 545
+    width: 1340
+    height: 711
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -348,6 +348,8 @@ MonoBehaviour:
     m_KeySerializationHelper:
     - {fileID: 7567800663102280636, guid: 69c57466bb4b60b498f5262619295ae7, type: 2}
     - {fileID: -1921634353817464312, guid: 9366cb2ef0ae63b4981054b350b5758f, type: 2}
+    - {fileID: 3260881188307915427, guid: c854e3373b7bd1246a3d039f3ff1c58e, type: 2}
+    - {fileID: 3260881188307915427, guid: a15bfde85215cee4e973f489506315ee, type: 2}
     m_ValueSerializationHelper:
     - e00: 1.1574298
       e01: 0
@@ -381,10 +383,42 @@ MonoBehaviour:
       e31: 0
       e32: 0
       e33: 1
+    - e00: 1
+      e01: 0
+      e02: 0
+      e03: 0
+      e10: 0
+      e11: 1
+      e12: 0
+      e13: 0
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+    - e00: 0.813706
+      e01: 0
+      e02: 0
+      e03: 288.2979
+      e10: 0
+      e11: 0.813706
+      e12: 0
+      e13: 106.39163
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
   m_PreviewAnimator: {fileID: 0}
-  m_AnimatorController: {fileID: 9100000, guid: 9366cb2ef0ae63b4981054b350b5758f, type: 2}
+  m_AnimatorController: {fileID: 9100000, guid: a15bfde85215cee4e973f489506315ee, type: 2}
   m_BreadCrumbs:
-  - m_Target: {fileID: -1921634353817464312, guid: 9366cb2ef0ae63b4981054b350b5758f, type: 2}
+  - m_Target: {fileID: 3260881188307915427, guid: a15bfde85215cee4e973f489506315ee, type: 2}
     m_ScrollPosition: {x: 0, y: 0}
   stateMachineGraph: {fileID: 0}
   stateMachineGraphGUI: {fileID: 0}
@@ -418,10 +452,10 @@ MonoBehaviour:
     m_TextWithWhitespace: "UnityEditor.Tilemaps.GridPaintPaletteWindow\u200B"
   m_Pos:
     serializedVersion: 2
-    x: 1025
+    x: 2022
     y: 79
-    width: 254
-    height: 595
+    width: 537
+    height: 907
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -483,10 +517,10 @@ MonoBehaviour:
     m_TextWithWhitespace: "Test Runner\u200B"
   m_Pos:
     serializedVersion: 2
-    x: 932
+    x: 2022
     y: 79
-    width: 347
-    height: 595
+    width: 537
+    height: 907
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -499,12 +533,12 @@ MonoBehaviour:
     m_ContainerData: []
     m_OverlaysVisible: 1
   m_Spl:
-    ID: 1282
+    ID: 6811
     splitterInitialOffset: 0
     currentActiveSplitter: -1
     realSizes:
-    - 394
-    - 131
+    - 628
+    - 209
     relativeSizes:
     - 0.75
     - 0.25
@@ -514,7 +548,7 @@ MonoBehaviour:
     maxSizes:
     - 0
     - 0
-    lastTotalSize: 525
+    lastTotalSize: 837
     splitSize: 6
     xOffset: 0
     m_Version: 1
@@ -522,11 +556,11 @@ MonoBehaviour:
     oldMinSizes: 
     oldMaxSizes: 
     oldSplitSize: 0
-  m_TestTypeToolbarIndex: 0
+  m_TestTypeToolbarIndex: 1
   m_TestListGUIs:
   - m_Window: {fileID: 15}
     runProgress:
-      RunGuid: 
+      RunGuid: 944cec51-f42b-490e-bcb2-44513c0df6ae
       ExecutionSettings:
         m_TargetPlatform: 0
         m_HasTargetPlatform: 0
@@ -536,9 +570,15 @@ MonoBehaviour:
           groupNames: []
           categoryNames: []
           assemblyNames: []
-        filters: []
+        filters:
+        - testMode: 1
+          testNames: []
+          groupNames:
+          - .*
+          categoryNames: []
+          assemblyNames: []
         runSynchronously: 0
-        playerHeartbeatTimeout: 0
+        playerHeartbeatTimeout: 600
         orderedTestNames: []
         ignoreTests: []
         featureFlags:
@@ -547,9 +587,364 @@ MonoBehaviour:
           strictDomainReload: 0
           disableNestedEnumeratorBugfix: 0
         randomOrderSeed: 0
-      HasFinished: 0
-      Progress: 0
-      CurrentStepName: 
+      HasFinished: 1
+      Progress: 1
+      CurrentStepName: Unlock Reload Assemblies
+      CurrentStageName: 
+    m_NewResultList:
+    - id: 1000
+      uniqueId: '[RPG Engine Tutorial][suite]'
+      name: RPG Engine Tutorial
+      fullName: RPG Engine Tutorial
+      resultStatus: 2
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 
+      parentUniqueId: 
+    - id: 1016
+      uniqueId: '[Tests][D:/Trabalhos/Unity/JogoUnity/Unity-master/Library/ScriptAssemblies/Tests.dll][suite]'
+      name: Tests.dll
+      fullName: D:/Trabalhos/Unity/JogoUnity/Unity-master/Library/ScriptAssemblies/Tests.dll
+      resultStatus: 2
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1027
+      parentUniqueId: '[RPG Engine Tutorial][suite]'
+    - id: 1001
+      uniqueId: 'Tests.dll/[Tests][BattleRegionTests][suite]'
+      name: BattleRegionTests
+      fullName: BattleRegionTests
+      resultStatus: 2
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1016
+      parentUniqueId: '[Tests][D:/Trabalhos/Unity/JogoUnity/Unity-master/Library/ScriptAssemblies/Tests.dll][suite]'
+    - id: 1004
+      uniqueId: 'Tests.dll/BattleRegionTests/[Tests][BattleRegionTests.Can_return_more_than_one_pack]'
+      name: Can_return_more_than_one_pack
+      fullName: BattleRegionTests.Can_return_more_than_one_pack
+      resultStatus: 2
+      duration: 0.0001856
+      messages: 
+      output: 
+      stacktrace: 'at BattleRegionTests.Can_return_more_than_one_pack () [0x00033]
+        in D:\Trabalhos\Unity\JogoUnity\Unity-master\Assets\Editor\EditMode\BattleRegionTests.cs:53
+
+'
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: 'Tests.dll/[Tests][BattleRegionTests][suite]'
+    - id: 1003
+      uniqueId: 'Tests.dll/BattleRegionTests/[Tests][BattleRegionTests.Get_pack_returns_an_enemy_pack]'
+      name: Get_pack_returns_an_enemy_pack
+      fullName: BattleRegionTests.Get_pack_returns_an_enemy_pack
+      resultStatus: 1
+      duration: 0.0000479
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: 'Tests.dll/[Tests][BattleRegionTests][suite]'
+    - id: 1002
+      uniqueId: 'Tests.dll/BattleRegionTests/[Tests][BattleRegionTests.Test_region_loaded_successfully]'
+      name: Test_region_loaded_successfully
+      fullName: BattleRegionTests.Test_region_loaded_successfully
+      resultStatus: 1
+      duration: 0.000016
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: 'Tests.dll/[Tests][BattleRegionTests][suite]'
+    - id: 1005
+      uniqueId: 'Tests.dll/[Tests][DirectionTests][suite]'
+      name: DirectionTests
+      fullName: DirectionTests
+      resultStatus: 1
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1016
+      parentUniqueId: '[Tests][D:/Trabalhos/Unity/JogoUnity/Unity-master/Library/ScriptAssemblies/Tests.dll][suite]'
+    - id: 1006
+      uniqueId: 'Tests.dll/DirectionTests/[Tests][DirectionTests.Basic_directions_are_correct]'
+      name: Basic_directions_are_correct
+      fullName: DirectionTests.Basic_directions_are_correct
+      resultStatus: 1
+      duration: 0.0000552
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1005
+      parentUniqueId: 'Tests.dll/[Tests][DirectionTests][suite]'
+    - id: 1007
+      uniqueId: 'Tests.dll/DirectionTests/[Tests][DirectionTests.Is_basic_evaluates_correctly]'
+      name: Is_basic_evaluates_correctly
+      fullName: DirectionTests.Is_basic_evaluates_correctly
+      resultStatus: 1
+      duration: 0.0000176
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1005
+      parentUniqueId: 'Tests.dll/[Tests][DirectionTests][suite]'
+    - id: 1008
+      uniqueId: 'Tests.dll/[Tests][PartyTests][suite]'
+      name: PartyTests
+      fullName: PartyTests
+      resultStatus: 1
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1016
+      parentUniqueId: '[Tests][D:/Trabalhos/Unity/JogoUnity/Unity-master/Library/ScriptAssemblies/Tests.dll][suite]'
+    - id: 1013
+      uniqueId: 'Tests.dll/PartyTests/[Tests][PartyTests.Adding_member_adds_to_active_members]'
+      name: Adding_member_adds_to_active_members
+      fullName: PartyTests.Adding_member_adds_to_active_members
+      resultStatus: 1
+      duration: 0.0000251
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1008
+      parentUniqueId: 'Tests.dll/[Tests][PartyTests][suite]'
+    - id: 1014
+      uniqueId: 'Tests.dll/PartyTests/[Tests][PartyTests.Adding_member_removes_from_reserve]'
+      name: Adding_member_removes_from_reserve
+      fullName: PartyTests.Adding_member_removes_from_reserve
+      resultStatus: 1
+      duration: 0.0000166
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1008
+      parentUniqueId: 'Tests.dll/[Tests][PartyTests][suite]'
+    - id: 1009
+      uniqueId: 'Tests.dll/PartyTests/[Tests][PartyTests.Constructs_a_party]'
+      name: Constructs_a_party
+      fullName: PartyTests.Constructs_a_party
+      resultStatus: 1
+      duration: 0.0000254
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1008
+      parentUniqueId: 'Tests.dll/[Tests][PartyTests][suite]'
+    - id: 1015
+      uniqueId: 'Tests.dll/PartyTests/[Tests][PartyTests.Doesnt_add_duplicate_members]'
+      name: Doesnt_add_duplicate_members
+      fullName: PartyTests.Doesnt_add_duplicate_members
+      resultStatus: 1
+      duration: 0.0000146
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1008
+      parentUniqueId: 'Tests.dll/[Tests][PartyTests][suite]'
+    - id: 1012
+      uniqueId: 'Tests.dll/PartyTests/[Tests][PartyTests.Doesnt_remove_inactive_members]'
+      name: Doesnt_remove_inactive_members
+      fullName: PartyTests.Doesnt_remove_inactive_members
+      resultStatus: 1
+      duration: 0.0000276
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1008
+      parentUniqueId: 'Tests.dll/[Tests][PartyTests][suite]'
+    - id: 1011
+      uniqueId: 'Tests.dll/PartyTests/[Tests][PartyTests.Removed_members_go_to_reserve]'
+      name: Removed_members_go_to_reserve
+      fullName: PartyTests.Removed_members_go_to_reserve
+      resultStatus: 1
+      duration: 0.0000212
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1008
+      parentUniqueId: 'Tests.dll/[Tests][PartyTests][suite]'
+    - id: 1010
+      uniqueId: 'Tests.dll/PartyTests/[Tests][PartyTests.Removes_active_members]'
+      name: Removes_active_members
+      fullName: PartyTests.Removes_active_members
+      resultStatus: 1
+      duration: 0.0000194
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1008
+      parentUniqueId: 'Tests.dll/[Tests][PartyTests][suite]'
+    m_ResultText: RPG Engine Tutorial (12 tests)  1 tests failed (0,000s)
+    m_ResultStacktrace: 
+    m_TestListState:
+      scrollPos: {x: 0, y: 0}
+      m_SelectedIDs: 1138224b
+      m_LastClickedID: 1260533777
+      m_ExpandedIDs: 70ed2e8d00cbf597561864c81138224b49f8046fffffff7f
+      m_RenameOverlay:
+        m_UserAcceptedRename: 0
+        m_Name: 
+        m_OriginalName: 
+        m_EditFieldRect:
+          serializedVersion: 2
+          x: 0
+          y: 0
+          width: 0
+          height: 0
+        m_UserData: 0
+        m_IsWaitingForDelay: 0
+        m_IsRenaming: 0
+        m_OriginalEventType: 11
+        m_IsRenamingFilename: 0
+        m_TrimLeadingAndTrailingWhitespace: 0
+        m_ClientGUIView: {fileID: 0}
+      m_SearchString: 
+    m_TestRunnerUIFilter:
+      PassedHidden: 0
+      FailedHidden: 0
+      NotRunHidden: 0
+      m_SearchString: 
+      selectedCategories: []
+      availableCategories:
+      - Uncategorized
+    m_SelectedOption: 0
+  - m_Window: {fileID: 15}
+    runProgress:
+      RunGuid: 944cec51-f42b-490e-bcb2-44513c0df6ae
+      ExecutionSettings:
+        m_TargetPlatform: 0
+        m_HasTargetPlatform: 0
+        filter:
+          testMode: 0
+          testNames: []
+          groupNames: []
+          categoryNames: []
+          assemblyNames: []
+        filters:
+        - testMode: 1
+          testNames: []
+          groupNames:
+          - .*
+          categoryNames: []
+          assemblyNames: []
+        runSynchronously: 0
+        playerHeartbeatTimeout: 600
+        orderedTestNames: []
+        ignoreTests: []
+        featureFlags:
+          fileCleanUpCheck: 0
+          requiresSplashScreen: 0
+          strictDomainReload: 0
+          disableNestedEnumeratorBugfix: 0
+        randomOrderSeed: 0
+      HasFinished: 1
+      Progress: 1
+      CurrentStepName: Unlock Reload Assemblies
       CurrentStageName: 
     m_NewResultList:
     - id: 1000
@@ -568,10 +963,10 @@ MonoBehaviour:
       categories: []
       parentId: 
       parentUniqueId: 
-    - id: 1016
-      uniqueId: '[Tests][C:/Users/guilh/Documents/GitHub/JogoUnity/Unity-master/Library/ScriptAssemblies/Tests.dll][suite]'
-      name: Tests.dll
-      fullName: C:/Users/guilh/Documents/GitHub/JogoUnity/Unity-master/Library/ScriptAssemblies/Tests.dll
+    - id: 1076
+      uniqueId: '[PlayMode][D:/Trabalhos/Unity/JogoUnity/Unity-master/Library/ScriptAssemblies/PlayMode.dll][suite]'
+      name: PlayMode.dll
+      fullName: D:/Trabalhos/Unity/JogoUnity/Unity-master/Library/ScriptAssemblies/PlayMode.dll
       resultStatus: 0
       duration: 0
       messages: 
@@ -585,9 +980,9 @@ MonoBehaviour:
       parentId: 1000
       parentUniqueId: '[RPG Engine Tutorial][suite]'
     - id: 1001
-      uniqueId: 'Tests.dll/[Tests][BattleRegionTests][suite]'
-      name: BattleRegionTests
-      fullName: BattleRegionTests
+      uniqueId: 'PlayMode.dll/[PlayMode][A1_DialogueWindowTests][suite]'
+      name: A1_DialogueWindowTests
+      fullName: A1_DialogueWindowTests
       resultStatus: 0
       duration: 0
       messages: 
@@ -598,12 +993,12 @@ MonoBehaviour:
       description: 
       isSuite: 1
       categories: []
-      parentId: 1016
-      parentUniqueId: '[Tests][C:/Users/guilh/Documents/GitHub/JogoUnity/Unity-master/Library/ScriptAssemblies/Tests.dll][suite]'
-    - id: 1004
-      uniqueId: 'Tests.dll/BattleRegionTests/[Tests][BattleRegionTests.Can_return_more_than_one_pack]'
-      name: Can_return_more_than_one_pack
-      fullName: BattleRegionTests.Can_return_more_than_one_pack
+      parentId: 1076
+      parentUniqueId: '[PlayMode][D:/Trabalhos/Unity/JogoUnity/Unity-master/Library/ScriptAssemblies/PlayMode.dll][suite]'
+    - id: 1032
+      uniqueId: 'PlayMode.dll/A1_DialogueWindowTests/[PlayMode][A1_DialogueWindowTests.Changes_game_state]'
+      name: Changes_game_state
+      fullName: A1_DialogueWindowTests.Changes_game_state
       resultStatus: 0
       duration: 0
       messages: 
@@ -615,12 +1010,12 @@ MonoBehaviour:
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1001
-      parentUniqueId: 'Tests.dll/[Tests][BattleRegionTests][suite]'
-    - id: 1003
-      uniqueId: 'Tests.dll/BattleRegionTests/[Tests][BattleRegionTests.Get_pack_returns_an_enemy_pack]'
-      name: Get_pack_returns_an_enemy_pack
-      fullName: BattleRegionTests.Get_pack_returns_an_enemy_pack
+      parentId: 1029
+      parentUniqueId: 'PlayMode.dll/[PlayMode][A1_DialogueWindowTests][suite]'
+    - id: 1036
+      uniqueId: 'PlayMode.dll/A1_DialogueWindowTests/[PlayMode][A1_DialogueWindowTests.Closes_to_correct_position]'
+      name: Closes_to_correct_position
+      fullName: A1_DialogueWindowTests.Closes_to_correct_position
       resultStatus: 0
       duration: 0
       messages: 
@@ -632,12 +1027,12 @@ MonoBehaviour:
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1001
-      parentUniqueId: 'Tests.dll/[Tests][BattleRegionTests][suite]'
-    - id: 1002
-      uniqueId: 'Tests.dll/BattleRegionTests/[Tests][BattleRegionTests.Test_region_loaded_successfully]'
-      name: Test_region_loaded_successfully
-      fullName: BattleRegionTests.Test_region_loaded_successfully
+      parentId: 1029
+      parentUniqueId: 'PlayMode.dll/[PlayMode][A1_DialogueWindowTests][suite]'
+    - id: 1034
+      uniqueId: 'PlayMode.dll/A1_DialogueWindowTests/[PlayMode][A1_DialogueWindowTests.Goes_through_dialogue]'
+      name: Goes_through_dialogue
+      fullName: A1_DialogueWindowTests.Goes_through_dialogue
       resultStatus: 0
       duration: 0
       messages: 
@@ -649,28 +1044,12 @@ MonoBehaviour:
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1001
-      parentUniqueId: 'Tests.dll/[Tests][BattleRegionTests][suite]'
-    - id: 1005
-      uniqueId: 'Tests.dll/[Tests][DirectionTests][suite]'
-      name: DirectionTests
-      fullName: DirectionTests
-      resultStatus: 0
-      duration: 0
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 1
-      categories: []
-      parentId: 1016
-      parentUniqueId: '[Tests][C:/Users/guilh/Documents/GitHub/JogoUnity/Unity-master/Library/ScriptAssemblies/Tests.dll][suite]'
-    - id: 1006
-      uniqueId: 'Tests.dll/DirectionTests/[Tests][DirectionTests.Basic_directions_are_correct]'
-      name: Basic_directions_are_correct
-      fullName: DirectionTests.Basic_directions_are_correct
+      parentId: 1029
+      parentUniqueId: 'PlayMode.dll/[PlayMode][A1_DialogueWindowTests][suite]'
+    - id: 1031
+      uniqueId: 'PlayMode.dll/A1_DialogueWindowTests/[PlayMode][A1_DialogueWindowTests.Opens]'
+      name: Opens
+      fullName: A1_DialogueWindowTests.Opens
       resultStatus: 0
       duration: 0
       messages: 
@@ -682,12 +1061,12 @@ MonoBehaviour:
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1005
-      parentUniqueId: 'Tests.dll/[Tests][DirectionTests][suite]'
-    - id: 1007
-      uniqueId: 'Tests.dll/DirectionTests/[Tests][DirectionTests.Is_basic_evaluates_correctly]'
-      name: Is_basic_evaluates_correctly
-      fullName: DirectionTests.Is_basic_evaluates_correctly
+      parentId: 1029
+      parentUniqueId: 'PlayMode.dll/[PlayMode][A1_DialogueWindowTests][suite]'
+    - id: 1033
+      uniqueId: 'PlayMode.dll/A1_DialogueWindowTests/[PlayMode][A1_DialogueWindowTests.Opens_to_correct_position]'
+      name: Opens_to_correct_position
+      fullName: A1_DialogueWindowTests.Opens_to_correct_position
       resultStatus: 0
       duration: 0
       messages: 
@@ -699,28 +1078,12 @@ MonoBehaviour:
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1005
-      parentUniqueId: 'Tests.dll/[Tests][DirectionTests][suite]'
-    - id: 1008
-      uniqueId: 'Tests.dll/[Tests][PartyTests][suite]'
-      name: PartyTests
-      fullName: PartyTests
-      resultStatus: 0
-      duration: 0
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 1
-      categories: []
-      parentId: 1016
-      parentUniqueId: '[Tests][C:/Users/guilh/Documents/GitHub/JogoUnity/Unity-master/Library/ScriptAssemblies/Tests.dll][suite]'
-    - id: 1013
-      uniqueId: 'Tests.dll/PartyTests/[Tests][PartyTests.Adding_member_adds_to_active_members]'
-      name: Adding_member_adds_to_active_members
-      fullName: PartyTests.Adding_member_adds_to_active_members
+      parentId: 1029
+      parentUniqueId: 'PlayMode.dll/[PlayMode][A1_DialogueWindowTests][suite]'
+    - id: 1035
+      uniqueId: 'PlayMode.dll/A1_DialogueWindowTests/[PlayMode][A1_DialogueWindowTests.Releases_game_state]'
+      name: Releases_game_state
+      fullName: A1_DialogueWindowTests.Releases_game_state
       resultStatus: 0
       duration: 0
       messages: 
@@ -732,12 +1095,12 @@ MonoBehaviour:
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1008
-      parentUniqueId: 'Tests.dll/[Tests][PartyTests][suite]'
-    - id: 1014
-      uniqueId: 'Tests.dll/PartyTests/[Tests][PartyTests.Adding_member_removes_from_reserve]'
-      name: Adding_member_removes_from_reserve
-      fullName: PartyTests.Adding_member_removes_from_reserve
+      parentId: 1029
+      parentUniqueId: 'PlayMode.dll/[PlayMode][A1_DialogueWindowTests][suite]'
+    - id: 1030
+      uniqueId: 'PlayMode.dll/A1_DialogueWindowTests/[PlayMode][A1_DialogueWindowTests.Starts_in_correct_position]'
+      name: Starts_in_correct_position
+      fullName: A1_DialogueWindowTests.Starts_in_correct_position
       resultStatus: 0
       duration: 0
       messages: 
@@ -749,12 +1112,28 @@ MonoBehaviour:
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1008
-      parentUniqueId: 'Tests.dll/[Tests][PartyTests][suite]'
+      parentId: 1029
+      parentUniqueId: 'PlayMode.dll/[PlayMode][A1_DialogueWindowTests][suite]'
     - id: 1009
-      uniqueId: 'Tests.dll/PartyTests/[Tests][PartyTests.Constructs_a_party]'
-      name: Constructs_a_party
-      fullName: PartyTests.Constructs_a_party
+      uniqueId: 'PlayMode.dll/[PlayMode][A1_MainMenuTests][suite]'
+      name: A1_MainMenuTests
+      fullName: A1_MainMenuTests
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1076
+      parentUniqueId: '[PlayMode][D:/Trabalhos/Unity/JogoUnity/Unity-master/Library/ScriptAssemblies/PlayMode.dll][suite]'
+    - id: 1041
+      uniqueId: 'PlayMode.dll/A1_MainMenuTests/[PlayMode][A1_MainMenuTests.Cant_be_closed_while_opening]'
+      name: Cant_be_closed_while_opening
+      fullName: A1_MainMenuTests.Cant_be_closed_while_opening
       resultStatus: 0
       duration: 0
       messages: 
@@ -766,12 +1145,12 @@ MonoBehaviour:
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1008
-      parentUniqueId: 'Tests.dll/[Tests][PartyTests][suite]'
-    - id: 1015
-      uniqueId: 'Tests.dll/PartyTests/[Tests][PartyTests.Doesnt_add_duplicate_members]'
-      name: Doesnt_add_duplicate_members
-      fullName: PartyTests.Doesnt_add_duplicate_members
+      parentId: 1037
+      parentUniqueId: 'PlayMode.dll/[PlayMode][A1_MainMenuTests][suite]'
+    - id: 1045
+      uniqueId: 'PlayMode.dll/A1_MainMenuTests/[PlayMode][A1_MainMenuTests.Cant_be_opened_while_closing]'
+      name: Cant_be_opened_while_closing
+      fullName: A1_MainMenuTests.Cant_be_opened_while_closing
       resultStatus: 0
       duration: 0
       messages: 
@@ -783,12 +1162,12 @@ MonoBehaviour:
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1008
-      parentUniqueId: 'Tests.dll/[Tests][PartyTests][suite]'
-    - id: 1012
-      uniqueId: 'Tests.dll/PartyTests/[Tests][PartyTests.Doesnt_remove_inactive_members]'
-      name: Doesnt_remove_inactive_members
-      fullName: PartyTests.Doesnt_remove_inactive_members
+      parentId: 1037
+      parentUniqueId: 'PlayMode.dll/[PlayMode][A1_MainMenuTests][suite]'
+    - id: 1049
+      uniqueId: 'PlayMode.dll/A1_MainMenuTests/[PlayMode][A1_MainMenuTests.Cant_open_in_dialogue]'
+      name: Cant_open_in_dialogue
+      fullName: A1_MainMenuTests.Cant_open_in_dialogue
       resultStatus: 0
       duration: 0
       messages: 
@@ -800,12 +1179,12 @@ MonoBehaviour:
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1008
-      parentUniqueId: 'Tests.dll/[Tests][PartyTests][suite]'
-    - id: 1011
-      uniqueId: 'Tests.dll/PartyTests/[Tests][PartyTests.Removed_members_go_to_reserve]'
-      name: Removed_members_go_to_reserve
-      fullName: PartyTests.Removed_members_go_to_reserve
+      parentId: 1037
+      parentUniqueId: 'PlayMode.dll/[PlayMode][A1_MainMenuTests][suite]'
+    - id: 1040
+      uniqueId: 'PlayMode.dll/A1_MainMenuTests/[PlayMode][A1_MainMenuTests.Changes_game_state]'
+      name: Changes_game_state
+      fullName: A1_MainMenuTests.Changes_game_state
       resultStatus: 0
       duration: 0
       messages: 
@@ -817,12 +1196,12 @@ MonoBehaviour:
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1008
-      parentUniqueId: 'Tests.dll/[Tests][PartyTests][suite]'
-    - id: 1010
-      uniqueId: 'Tests.dll/PartyTests/[Tests][PartyTests.Removes_active_members]'
-      name: Removes_active_members
-      fullName: PartyTests.Removes_active_members
+      parentId: 1037
+      parentUniqueId: 'PlayMode.dll/[PlayMode][A1_MainMenuTests][suite]'
+    - id: 1043
+      uniqueId: 'PlayMode.dll/A1_MainMenuTests/[PlayMode][A1_MainMenuTests.Closes]'
+      name: Closes
+      fullName: A1_MainMenuTests.Closes
       resultStatus: 0
       duration: 0
       messages: 
@@ -834,8 +1213,1037 @@ MonoBehaviour:
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1008
-      parentUniqueId: 'Tests.dll/[Tests][PartyTests][suite]'
+      parentId: 1037
+      parentUniqueId: 'PlayMode.dll/[PlayMode][A1_MainMenuTests][suite]'
+    - id: 1046
+      uniqueId: 'PlayMode.dll/A1_MainMenuTests/[PlayMode][A1_MainMenuTests.Closes_to_correct_position]'
+      name: Closes_to_correct_position
+      fullName: A1_MainMenuTests.Closes_to_correct_position
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1037
+      parentUniqueId: 'PlayMode.dll/[PlayMode][A1_MainMenuTests][suite]'
+    - id: 1048
+      uniqueId: 'PlayMode.dll/A1_MainMenuTests/[PlayMode][A1_MainMenuTests.Generated_correct_amount_of_party_info]'
+      name: Generated_correct_amount_of_party_info
+      fullName: A1_MainMenuTests.Generated_correct_amount_of_party_info
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1037
+      parentUniqueId: 'PlayMode.dll/[PlayMode][A1_MainMenuTests][suite]'
+    - id: 1047
+      uniqueId: 'PlayMode.dll/A1_MainMenuTests/[PlayMode][A1_MainMenuTests.Generated_party_info]'
+      name: Generated_party_info
+      fullName: A1_MainMenuTests.Generated_party_info
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1037
+      parentUniqueId: 'PlayMode.dll/[PlayMode][A1_MainMenuTests][suite]'
+    - id: 1039
+      uniqueId: 'PlayMode.dll/A1_MainMenuTests/[PlayMode][A1_MainMenuTests.Opens]'
+      name: Opens
+      fullName: A1_MainMenuTests.Opens
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1037
+      parentUniqueId: 'PlayMode.dll/[PlayMode][A1_MainMenuTests][suite]'
+    - id: 1042
+      uniqueId: 'PlayMode.dll/A1_MainMenuTests/[PlayMode][A1_MainMenuTests.Opens_to_correct_position]'
+      name: Opens_to_correct_position
+      fullName: A1_MainMenuTests.Opens_to_correct_position
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1037
+      parentUniqueId: 'PlayMode.dll/[PlayMode][A1_MainMenuTests][suite]'
+    - id: 1044
+      uniqueId: 'PlayMode.dll/A1_MainMenuTests/[PlayMode][A1_MainMenuTests.Releases_game_state]'
+      name: Releases_game_state
+      fullName: A1_MainMenuTests.Releases_game_state
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1037
+      parentUniqueId: 'PlayMode.dll/[PlayMode][A1_MainMenuTests][suite]'
+    - id: 1038
+      uniqueId: 'PlayMode.dll/A1_MainMenuTests/[PlayMode][A1_MainMenuTests.Starts_in_correct_position]'
+      name: Starts_in_correct_position
+      fullName: A1_MainMenuTests.Starts_in_correct_position
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1037
+      parentUniqueId: 'PlayMode.dll/[PlayMode][A1_MainMenuTests][suite]'
+    - id: 1022
+      uniqueId: 'PlayMode.dll/[PlayMode][A1_MapTests][suite]'
+      name: A1_MapTests
+      fullName: A1_MapTests
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1076
+      parentUniqueId: '[PlayMode][D:/Trabalhos/Unity/JogoUnity/Unity-master/Library/ScriptAssemblies/PlayMode.dll][suite]'
+    - id: 1051
+      uniqueId: 'PlayMode.dll/A1_MapTests/[PlayMode][A1_MapTests.Grid_is_not_null]'
+      name: Grid_is_not_null
+      fullName: A1_MapTests.Grid_is_not_null
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1050
+      parentUniqueId: 'PlayMode.dll/[PlayMode][A1_MapTests][suite]'
+    - id: 1054
+      uniqueId: 'PlayMode.dll/A1_MapTests/[PlayMode][A1_MapTests.Map_region_is_null]'
+      name: Map_region_is_null
+      fullName: A1_MapTests.Map_region_is_null
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1050
+      parentUniqueId: 'PlayMode.dll/[PlayMode][A1_MapTests][suite]'
+    - id: 1052
+      uniqueId: 'PlayMode.dll/A1_MapTests/[PlayMode][A1_MapTests.Occupied_cells_are_in_dictionary]'
+      name: Occupied_cells_are_in_dictionary
+      fullName: A1_MapTests.Occupied_cells_are_in_dictionary
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1050
+      parentUniqueId: 'PlayMode.dll/[PlayMode][A1_MapTests][suite]'
+    - id: 1053
+      uniqueId: 'PlayMode.dll/A1_MapTests/[PlayMode][A1_MapTests.Trigger_cells_are_in_dictionary]'
+      name: Trigger_cells_are_in_dictionary
+      fullName: A1_MapTests.Trigger_cells_are_in_dictionary
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1050
+      parentUniqueId: 'PlayMode.dll/[PlayMode][A1_MapTests][suite]'
+    - id: 1027
+      uniqueId: 'PlayMode.dll/[PlayMode][A2_CharacterTests][suite]'
+      name: A2_CharacterTests
+      fullName: A2_CharacterTests
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1076
+      parentUniqueId: '[PlayMode][D:/Trabalhos/Unity/JogoUnity/Unity-master/Library/ScriptAssemblies/PlayMode.dll][suite]'
+    - id: 1063
+      uniqueId: 'PlayMode.dll/A2_CharacterTests/[PlayMode][A2_CharacterTests.Animator_updates_parameters]'
+      name: Animator_updates_parameters
+      fullName: A2_CharacterTests.Animator_updates_parameters
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1055
+      parentUniqueId: 'PlayMode.dll/[PlayMode][A2_CharacterTests][suite]'
+    - id: 1060
+      uniqueId: 'PlayMode.dll/A2_CharacterTests/[PlayMode][A2_CharacterTests.Cant_move_into_characters]'
+      name: Cant_move_into_characters
+      fullName: A2_CharacterTests.Cant_move_into_characters
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1055
+      parentUniqueId: 'PlayMode.dll/[PlayMode][A2_CharacterTests][suite]'
+    - id: 1062
+      uniqueId: 'PlayMode.dll/A2_CharacterTests/[PlayMode][A2_CharacterTests.Cant_move_into_collisions]'
+      name: Cant_move_into_collisions
+      fullName: A2_CharacterTests.Cant_move_into_collisions
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1055
+      parentUniqueId: 'PlayMode.dll/[PlayMode][A2_CharacterTests][suite]'
+    - id: 1057
+      uniqueId: 'PlayMode.dll/A2_CharacterTests/[PlayMode][A2_CharacterTests.Character_facing_updates_correctly]'
+      name: Character_facing_updates_correctly
+      fullName: A2_CharacterTests.Character_facing_updates_correctly
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1055
+      parentUniqueId: 'PlayMode.dll/[PlayMode][A2_CharacterTests][suite]'
+    - id: 1061
+      uniqueId: 'PlayMode.dll/A2_CharacterTests/[PlayMode][A2_CharacterTests.Failed_move_changes_facing]'
+      name: Failed_move_changes_facing
+      fullName: A2_CharacterTests.Failed_move_changes_facing
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1055
+      parentUniqueId: 'PlayMode.dll/[PlayMode][A2_CharacterTests][suite]'
+    - id: 1056
+      uniqueId: 'PlayMode.dll/A2_CharacterTests/[PlayMode][A2_CharacterTests.Finds_current_cell]'
+      name: Finds_current_cell
+      fullName: A2_CharacterTests.Finds_current_cell
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1055
+      parentUniqueId: 'PlayMode.dll/[PlayMode][A2_CharacterTests][suite]'
+    - id: 1058
+      uniqueId: 'PlayMode.dll/A2_CharacterTests/[PlayMode][A2_CharacterTests.Moves_to_the_correct_cell]'
+      name: Moves_to_the_correct_cell
+      fullName: A2_CharacterTests.Moves_to_the_correct_cell
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1055
+      parentUniqueId: 'PlayMode.dll/[PlayMode][A2_CharacterTests][suite]'
+    - id: 1059
+      uniqueId: 'PlayMode.dll/A2_CharacterTests/[PlayMode][A2_CharacterTests.Updates_cell_map_dictionary]'
+      name: Updates_cell_map_dictionary
+      fullName: A2_CharacterTests.Updates_cell_map_dictionary
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1055
+      parentUniqueId: 'PlayMode.dll/[PlayMode][A2_CharacterTests][suite]'
+    - id: 1036
+      uniqueId: 'PlayMode.dll/[PlayMode][A2_CutsceneTests][suite]'
+      name: A2_CutsceneTests
+      fullName: A2_CutsceneTests
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1076
+      parentUniqueId: '[PlayMode][D:/Trabalhos/Unity/JogoUnity/Unity-master/Library/ScriptAssemblies/PlayMode.dll][suite]'
+    - id: 1066
+      uniqueId: 'PlayMode.dll/A2_CutsceneTests/[PlayMode][A2_CutsceneTests.Autoplay_scene_ends]'
+      name: Autoplay_scene_ends
+      fullName: A2_CutsceneTests.Autoplay_scene_ends
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1064
+      parentUniqueId: 'PlayMode.dll/[PlayMode][A2_CutsceneTests][suite]'
+    - id: 1065
+      uniqueId: 'PlayMode.dll/A2_CutsceneTests/[PlayMode][A2_CutsceneTests.Autoplay_scene_plays]'
+      name: Autoplay_scene_plays
+      fullName: A2_CutsceneTests.Autoplay_scene_plays
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1064
+      parentUniqueId: 'PlayMode.dll/[PlayMode][A2_CutsceneTests][suite]'
+    - id: 1070
+      uniqueId: 'PlayMode.dll/A2_CutsceneTests/[PlayMode][A2_CutsceneTests.Called_scene_ends]'
+      name: Called_scene_ends
+      fullName: A2_CutsceneTests.Called_scene_ends
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1064
+      parentUniqueId: 'PlayMode.dll/[PlayMode][A2_CutsceneTests][suite]'
+    - id: 1069
+      uniqueId: 'PlayMode.dll/A2_CutsceneTests/[PlayMode][A2_CutsceneTests.Called_scene_plays]'
+      name: Called_scene_plays
+      fullName: A2_CutsceneTests.Called_scene_plays
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1064
+      parentUniqueId: 'PlayMode.dll/[PlayMode][A2_CutsceneTests][suite]'
+    - id: 1068
+      uniqueId: 'PlayMode.dll/A2_CutsceneTests/[PlayMode][A2_CutsceneTests.Touch_scene_ends]'
+      name: Touch_scene_ends
+      fullName: A2_CutsceneTests.Touch_scene_ends
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1064
+      parentUniqueId: 'PlayMode.dll/[PlayMode][A2_CutsceneTests][suite]'
+    - id: 1067
+      uniqueId: 'PlayMode.dll/A2_CutsceneTests/[PlayMode][A2_CutsceneTests.Touch_scene_plays]'
+      name: Touch_scene_plays
+      fullName: A2_CutsceneTests.Touch_scene_plays
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1064
+      parentUniqueId: 'PlayMode.dll/[PlayMode][A2_CutsceneTests][suite]'
+    - id: 1043
+      uniqueId: 'PlayMode.dll/[PlayMode][A2_NPCTests][suite]'
+      name: A2_NPCTests
+      fullName: A2_NPCTests
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1076
+      parentUniqueId: '[PlayMode][D:/Trabalhos/Unity/JogoUnity/Unity-master/Library/ScriptAssemblies/PlayMode.dll][suite]'
+    - id: 1074
+      uniqueId: 'PlayMode.dll/A2_NPCTests/[PlayMode][A2_NPCTests.Does_move_route_once_if_not_stationary_or_random]'
+      name: Does_move_route_once_if_not_stationary_or_random
+      fullName: A2_NPCTests.Does_move_route_once_if_not_stationary_or_random
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1071
+      parentUniqueId: 'PlayMode.dll/[PlayMode][A2_NPCTests][suite]'
+    - id: 1078
+      uniqueId: 'PlayMode.dll/A2_NPCTests/[PlayMode][A2_NPCTests.Doesnt_move_during_scene]'
+      name: Doesnt_move_during_scene
+      fullName: A2_NPCTests.Doesnt_move_during_scene
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1071
+      parentUniqueId: 'PlayMode.dll/[PlayMode][A2_NPCTests][suite]'
+    - id: 1072
+      uniqueId: 'PlayMode.dll/A2_NPCTests/[PlayMode][A2_NPCTests.Doesnt_move_if_never_moves]'
+      name: Doesnt_move_if_never_moves
+      fullName: A2_NPCTests.Doesnt_move_if_never_moves
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1071
+      parentUniqueId: 'PlayMode.dll/[PlayMode][A2_NPCTests][suite]'
+    - id: 1077
+      uniqueId: 'PlayMode.dll/A2_NPCTests/[PlayMode][A2_NPCTests.Interaction_cutscene_triggers]'
+      name: Interaction_cutscene_triggers
+      fullName: A2_NPCTests.Interaction_cutscene_triggers
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1071
+      parentUniqueId: 'PlayMode.dll/[PlayMode][A2_NPCTests][suite]'
+    - id: 1075
+      uniqueId: 'PlayMode.dll/A2_NPCTests/[PlayMode][A2_NPCTests.Move_route_loops_if_set]'
+      name: Move_route_loops_if_set
+      fullName: A2_NPCTests.Move_route_loops_if_set
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1071
+      parentUniqueId: 'PlayMode.dll/[PlayMode][A2_NPCTests][suite]'
+    - id: 1073
+      uniqueId: 'PlayMode.dll/A2_NPCTests/[PlayMode][A2_NPCTests.Moves_if_randomly_moves]'
+      name: Moves_if_randomly_moves
+      fullName: A2_NPCTests.Moves_if_randomly_moves
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1071
+      parentUniqueId: 'PlayMode.dll/[PlayMode][A2_NPCTests][suite]'
+    - id: 1076
+      uniqueId: 'PlayMode.dll/A2_NPCTests/[PlayMode][A2_NPCTests.Turns_to_player_on_interact]'
+      name: Turns_to_player_on_interact
+      fullName: A2_NPCTests.Turns_to_player_on_interact
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1071
+      parentUniqueId: 'PlayMode.dll/[PlayMode][A2_NPCTests][suite]'
+    - id: 1051
+      uniqueId: 'PlayMode.dll/[PlayMode][A2_TransferTests][suite]'
+      name: A2_TransferTests
+      fullName: A2_TransferTests
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1076
+      parentUniqueId: '[PlayMode][D:/Trabalhos/Unity/JogoUnity/Unity-master/Library/ScriptAssemblies/PlayMode.dll][suite]'
+    - id: 1082
+      uniqueId: 'PlayMode.dll/A2_TransferTests/[PlayMode][A2_TransferTests.Loads_new_map]'
+      name: Loads_new_map
+      fullName: A2_TransferTests.Loads_new_map
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1079
+      parentUniqueId: 'PlayMode.dll/[PlayMode][A2_TransferTests][suite]'
+    - id: 1080
+      uniqueId: 'PlayMode.dll/A2_TransferTests/[PlayMode][A2_TransferTests.Registers_with_map]'
+      name: Registers_with_map
+      fullName: A2_TransferTests.Registers_with_map
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1079
+      parentUniqueId: 'PlayMode.dll/[PlayMode][A2_TransferTests][suite]'
+    - id: 1084
+      uniqueId: 'PlayMode.dll/A2_TransferTests/[PlayMode][A2_TransferTests.Returns_game_state]'
+      name: Returns_game_state
+      fullName: A2_TransferTests.Returns_game_state
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1079
+      parentUniqueId: 'PlayMode.dll/[PlayMode][A2_TransferTests][suite]'
+    - id: 1083
+      uniqueId: 'PlayMode.dll/A2_TransferTests/[PlayMode][A2_TransferTests.Sends_to_correct_position]'
+      name: Sends_to_correct_position
+      fullName: A2_TransferTests.Sends_to_correct_position
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1079
+      parentUniqueId: 'PlayMode.dll/[PlayMode][A2_TransferTests][suite]'
+    - id: 1081
+      uniqueId: 'PlayMode.dll/A2_TransferTests/[PlayMode][A2_TransferTests.Triggers_on_touch]'
+      name: Triggers_on_touch
+      fullName: A2_TransferTests.Triggers_on_touch
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1079
+      parentUniqueId: 'PlayMode.dll/[PlayMode][A2_TransferTests][suite]'
+    - id: 1057
+      uniqueId: 'PlayMode.dll/[PlayMode][B1_BattleControlTests][suite]'
+      name: B1_BattleControlTests
+      fullName: B1_BattleControlTests
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1076
+      parentUniqueId: '[PlayMode][D:/Trabalhos/Unity/JogoUnity/Unity-master/Library/ScriptAssemblies/PlayMode.dll][suite]'
+    - id: 1089
+      uniqueId: 'PlayMode.dll/B1_BattleControlTests/[PlayMode][B1_BattleControlTests.Allies_spawned_and_have_stats]'
+      name: Allies_spawned_and_have_stats
+      fullName: B1_BattleControlTests.Allies_spawned_and_have_stats
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1085
+      parentUniqueId: 'PlayMode.dll/[PlayMode][B1_BattleControlTests][suite]'
+    - id: 1088
+      uniqueId: 'PlayMode.dll/B1_BattleControlTests/[PlayMode][B1_BattleControlTests.Battle_setup_finishes]'
+      name: Battle_setup_finishes
+      fullName: B1_BattleControlTests.Battle_setup_finishes
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1085
+      parentUniqueId: 'PlayMode.dll/[PlayMode][B1_BattleControlTests][suite]'
+    - id: 1092
+      uniqueId: 'PlayMode.dll/B1_BattleControlTests/[PlayMode][B1_BattleControlTests.Enemies_spawn_in_correct_positions]'
+      name: Enemies_spawn_in_correct_positions
+      fullName: B1_BattleControlTests.Enemies_spawn_in_correct_positions
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1085
+      parentUniqueId: 'PlayMode.dll/[PlayMode][B1_BattleControlTests][suite]'
+    - id: 1090
+      uniqueId: 'PlayMode.dll/B1_BattleControlTests/[PlayMode][B1_BattleControlTests.Enemies_spawned_and_have_stats]'
+      name: Enemies_spawned_and_have_stats
+      fullName: B1_BattleControlTests.Enemies_spawned_and_have_stats
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1085
+      parentUniqueId: 'PlayMode.dll/[PlayMode][B1_BattleControlTests][suite]'
+    - id: 1094
+      uniqueId: 'PlayMode.dll/B1_BattleControlTests/[PlayMode][B1_BattleControlTests.First_actor_takes_turn]'
+      name: First_actor_takes_turn
+      fullName: B1_BattleControlTests.First_actor_takes_turn
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1085
+      parentUniqueId: 'PlayMode.dll/[PlayMode][B1_BattleControlTests][suite]'
+    - id: 1087
+      uniqueId: 'PlayMode.dll/B1_BattleControlTests/[PlayMode][B1_BattleControlTests.Found_an_enemy_pack]'
+      name: Found_an_enemy_pack
+      fullName: B1_BattleControlTests.Found_an_enemy_pack
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1085
+      parentUniqueId: 'PlayMode.dll/[PlayMode][B1_BattleControlTests][suite]'
+    - id: 1086
+      uniqueId: 'PlayMode.dll/B1_BattleControlTests/[PlayMode][B1_BattleControlTests.Game_state_changes]'
+      name: Game_state_changes
+      fullName: B1_BattleControlTests.Game_state_changes
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1085
+      parentUniqueId: 'PlayMode.dll/[PlayMode][B1_BattleControlTests][suite]'
+    - id: 1093
+      uniqueId: 'PlayMode.dll/B1_BattleControlTests/[PlayMode][B1_BattleControlTests.Turn_number_starts_at_0]'
+      name: Turn_number_starts_at_0
+      fullName: B1_BattleControlTests.Turn_number_starts_at_0
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1085
+      parentUniqueId: 'PlayMode.dll/[PlayMode][B1_BattleControlTests][suite]'
+    - id: 1091
+      uniqueId: 'PlayMode.dll/B1_BattleControlTests/[PlayMode][B1_BattleControlTests.Turn_order_based_on_initiative]'
+      name: Turn_order_based_on_initiative
+      fullName: B1_BattleControlTests.Turn_order_based_on_initiative
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1085
+      parentUniqueId: 'PlayMode.dll/[PlayMode][B1_BattleControlTests][suite]'
+    - id: 1067
+      uniqueId: 'PlayMode.dll/[PlayMode][B2_BattlePortraitTests][suite]'
+      name: B2_BattlePortraitTests
+      fullName: B2_BattlePortraitTests
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1076
+      parentUniqueId: '[PlayMode][D:/Trabalhos/Unity/JogoUnity/Unity-master/Library/ScriptAssemblies/PlayMode.dll][suite]'
+    - id: 1096
+      uniqueId: 'PlayMode.dll/B2_BattlePortraitTests/[PlayMode][B2_BattlePortraitTests.All_portraits_spawned]'
+      name: All_portraits_spawned
+      fullName: B2_BattlePortraitTests.All_portraits_spawned
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1095
+      parentUniqueId: 'PlayMode.dll/[PlayMode][B2_BattlePortraitTests][suite]'
+    - id: 1098
+      uniqueId: 'PlayMode.dll/B2_BattlePortraitTests/[PlayMode][B2_BattlePortraitTests.Moves_to_slot_position]'
+      name: Moves_to_slot_position
+      fullName: B2_BattlePortraitTests.Moves_to_slot_position
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1095
+      parentUniqueId: 'PlayMode.dll/[PlayMode][B2_BattlePortraitTests][suite]'
+    - id: 1099
+      uniqueId: 'PlayMode.dll/B2_BattlePortraitTests/[PlayMode][B2_BattlePortraitTests.One_portrait_per_slot]'
+      name: One_portrait_per_slot
+      fullName: B2_BattlePortraitTests.One_portrait_per_slot
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1095
+      parentUniqueId: 'PlayMode.dll/[PlayMode][B2_BattlePortraitTests][suite]'
+    - id: 1097
+      uniqueId: 'PlayMode.dll/B2_BattlePortraitTests/[PlayMode][B2_BattlePortraitTests.Turnbar_is_parent]'
+      name: Turnbar_is_parent
+      fullName: B2_BattlePortraitTests.Turnbar_is_parent
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1095
+      parentUniqueId: 'PlayMode.dll/[PlayMode][B2_BattlePortraitTests][suite]'
+    - id: 1072
+      uniqueId: 'PlayMode.dll/[PlayMode][B2_TurnBarAndIndicatorTests][suite]'
+      name: B2_TurnBarAndIndicatorTests
+      fullName: B2_TurnBarAndIndicatorTests
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1076
+      parentUniqueId: '[PlayMode][D:/Trabalhos/Unity/JogoUnity/Unity-master/Library/ScriptAssemblies/PlayMode.dll][suite]'
+    - id: 1103
+      uniqueId: 'PlayMode.dll/B2_TurnBarAndIndicatorTests/[PlayMode][B2_TurnBarAndIndicatorTests.Indicator_moves_to_correct_position]'
+      name: Indicator_moves_to_correct_position
+      fullName: B2_TurnBarAndIndicatorTests.Indicator_moves_to_correct_position
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1100
+      parentUniqueId: 'PlayMode.dll/[PlayMode][B2_TurnBarAndIndicatorTests][suite]'
+    - id: 1102
+      uniqueId: 'PlayMode.dll/B2_TurnBarAndIndicatorTests/[PlayMode][B2_TurnBarAndIndicatorTests.Spawns_correct_number_of_portraits]'
+      name: Spawns_correct_number_of_portraits
+      fullName: B2_TurnBarAndIndicatorTests.Spawns_correct_number_of_portraits
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1100
+      parentUniqueId: 'PlayMode.dll/[PlayMode][B2_TurnBarAndIndicatorTests][suite]'
+    - id: 1101
+      uniqueId: 'PlayMode.dll/B2_TurnBarAndIndicatorTests/[PlayMode][B2_TurnBarAndIndicatorTests.Spawns_correct_number_of_slots]'
+      name: Spawns_correct_number_of_slots
+      fullName: B2_TurnBarAndIndicatorTests.Spawns_correct_number_of_slots
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1100
+      parentUniqueId: 'PlayMode.dll/[PlayMode][B2_TurnBarAndIndicatorTests][suite]'
     m_ResultText: 
     m_ResultStacktrace: 
     m_TestListState:
@@ -872,7 +2280,7 @@ MonoBehaviour:
     m_SelectedOption: 0
   - m_Window: {fileID: 0}
     runProgress:
-      RunGuid: 
+      RunGuid: 944cec51-f42b-490e-bcb2-44513c0df6ae
       ExecutionSettings:
         m_TargetPlatform: 0
         m_HasTargetPlatform: 0
@@ -882,70 +2290,15 @@ MonoBehaviour:
           groupNames: []
           categoryNames: []
           assemblyNames: []
-        filters: []
-        runSynchronously: 0
-        playerHeartbeatTimeout: 0
-        orderedTestNames: []
-        ignoreTests: []
-        featureFlags:
-          fileCleanUpCheck: 0
-          requiresSplashScreen: 0
-          strictDomainReload: 0
-          disableNestedEnumeratorBugfix: 0
-        randomOrderSeed: 0
-      HasFinished: 0
-      Progress: 0
-      CurrentStepName: 
-      CurrentStageName: 
-    m_NewResultList: []
-    m_ResultText: 
-    m_ResultStacktrace: 
-    m_TestListState:
-      scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
-      m_LastClickedID: 0
-      m_ExpandedIDs: 
-      m_RenameOverlay:
-        m_UserAcceptedRename: 0
-        m_Name: 
-        m_OriginalName: 
-        m_EditFieldRect:
-          serializedVersion: 2
-          x: 0
-          y: 0
-          width: 0
-          height: 0
-        m_UserData: 0
-        m_IsWaitingForDelay: 0
-        m_IsRenaming: 0
-        m_OriginalEventType: 11
-        m_IsRenamingFilename: 0
-        m_TrimLeadingAndTrailingWhitespace: 0
-        m_ClientGUIView: {fileID: 0}
-      m_SearchString: 
-    m_TestRunnerUIFilter:
-      PassedHidden: 0
-      FailedHidden: 0
-      NotRunHidden: 0
-      m_SearchString: 
-      selectedCategories: []
-      availableCategories: []
-    m_SelectedOption: 0
-  - m_Window: {fileID: 0}
-    runProgress:
-      RunGuid: 
-      ExecutionSettings:
-        m_TargetPlatform: 0
-        m_HasTargetPlatform: 0
-        filter:
-          testMode: 0
+        filters:
+        - testMode: 1
           testNames: []
-          groupNames: []
+          groupNames:
+          - .*
           categoryNames: []
           assemblyNames: []
-        filters: []
         runSynchronously: 0
-        playerHeartbeatTimeout: 0
+        playerHeartbeatTimeout: 600
         orderedTestNames: []
         ignoreTests: []
         featureFlags:
@@ -954,9 +2307,9 @@ MonoBehaviour:
           strictDomainReload: 0
           disableNestedEnumeratorBugfix: 0
         randomOrderSeed: 0
-      HasFinished: 0
-      Progress: 0
-      CurrentStepName: 
+      HasFinished: 1
+      Progress: 1
+      CurrentStepName: Unlock Reload Assemblies
       CurrentStageName: 
     m_NewResultList: []
     m_ResultText: 
@@ -1015,8 +2368,8 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 79
-    width: 304
-    height: 545
+    width: 269
+    height: 613
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -1038,8 +2391,7 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SkipHidden: 0
     m_SearchArea: 1
-    m_Folders:
-    - Assets/Prefabs/Core/Maps
+    m_Folders: []
     m_Globs: []
     m_ProductIds: 
     m_AnyWithAssetOrigin: 0
@@ -1050,14 +2402,14 @@ MonoBehaviour:
   m_StartGridSize: 64
   m_LastFolders: []
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: C:\Users\guilh\Documents\GitHub\JogoUnity\Unity-master
+  m_LastProjectPath: D:\Trabalhos\Unity\JogoUnity\Unity-master
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 18ac0000
     m_LastClickedID: 44056
-    m_ExpandedIDs: 00000000e8820000ea820000ec820000ee820000f0820000f2820000f4820000f6820000f8820000fa820000fc820000fe82000000830000028300000483000006830000088300000a8300000c8300000e83000010830000
+    m_ExpandedIDs: 000000000c8100000e81000010810000128100001481000016810000188100001a8100001c8100001e81000020810000228100002481000026810000288100002a8100002c8100002e8100003081000032810000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1083,10 +2435,10 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_AssetTreeState:
-    scrollPos: {x: 0, y: 433}
+    scrollPos: {x: 0, y: 2031.7332}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: ffffffff00000000e8820000ea820000ec820000ee820000f0820000f2820000f4820000f6820000f8820000fa820000fc820000fe82000000830000028300000483000006830000088300000a8300000c8300000e83000010830000
+    m_ExpandedIDs: ffffffff000000000c8100000e810000108100001481000016810000188100001a8100001c8100001e810000208100002281000026810000288100002a8100002c8100002e8100003081000032810000d68100001682000022820000248200003482000048880000e09a0000e29a0000f49a000016c10000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1165,10 +2517,10 @@ MonoBehaviour:
     m_TextWithWhitespace: "Inspector\u200B"
   m_Pos:
     serializedVersion: 2
-    x: 932
+    x: 2021
     y: 79
-    width: 347
-    height: 595
+    width: 538
+    height: 907
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -1214,10 +2566,10 @@ MonoBehaviour:
     m_TextWithWhitespace: "Hierarchy\u200B"
   m_Pos:
     serializedVersion: 2
-    x: 836
+    x: 1612
     y: 79
-    width: 187
-    height: 545
+    width: 407
+    height: 613
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -1232,9 +2584,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
-      m_LastClickedID: 0
-      m_ExpandedIDs: def5ffff4084000044840000
+      m_SelectedIDs: 7a3bffff
+      m_LastClickedID: -50310
+      m_ExpandedIDs: 7a3bffff863bffff7ac40000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1280,10 +2632,10 @@ MonoBehaviour:
     m_TextWithWhitespace: "Scene\u200B"
   m_Pos:
     serializedVersion: 2
-    x: 305
+    x: 270
     y: 79
-    width: 529
-    height: 545
+    width: 1340
+    height: 711
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -1396,11 +2748,11 @@ MonoBehaviour:
       displayed: 0
       id: Scene View/Light Settings
       index: 1
-      contents: '{"m_Layout":4,"m_Collapsed":false,"m_Floating":false,"m_FloatingSnapOffset":{"x":0.0,"y":0.0},"m_SnapOffsetDelta":{"x":24.0,"y":25.0},"m_FloatingSnapCorner":0,"m_Size":{"x":0.0,"y":0.0},"m_SizeOverridden":false}'
+      contents: '{"m_Layout":4,"m_Collapsed":false,"m_Floating":false,"m_FloatingSnapOffset":{"x":24.0,"y":0.0},"m_SnapOffsetDelta":{"x":0.0,"y":25.0},"m_FloatingSnapCorner":0,"m_Size":{"x":0.0,"y":0.0},"m_SizeOverridden":false}'
       floating: 0
       collapsed: 0
-      snapOffset: {x: 0, y: 0}
-      snapOffsetDelta: {x: 24, y: 25}
+      snapOffset: {x: 24, y: 0}
+      snapOffsetDelta: {x: 0, y: 25}
       snapCorner: 0
       layout: 4
       size: {x: 0, y: 0}
@@ -1676,11 +3028,11 @@ MonoBehaviour:
       displayed: 0
       id: Scene View/Lighting Visualization Colors
       index: 0
-      contents: '{"m_Layout":4,"m_Collapsed":false,"m_Floating":false,"m_FloatingSnapOffset":{"x":0.0,"y":0.0},"m_SnapOffsetDelta":{"x":24.0,"y":25.0},"m_FloatingSnapCorner":0,"m_Size":{"x":0.0,"y":0.0},"m_SizeOverridden":false}'
+      contents: '{"m_Layout":4,"m_Collapsed":false,"m_Floating":false,"m_FloatingSnapOffset":{"x":24.0,"y":0.0},"m_SnapOffsetDelta":{"x":0.0,"y":25.0},"m_FloatingSnapCorner":0,"m_Size":{"x":0.0,"y":0.0},"m_SizeOverridden":false}'
       floating: 0
       collapsed: 0
-      snapOffset: {x: 0, y: 0}
-      snapOffsetDelta: {x: 24, y: 25}
+      snapOffset: {x: 24, y: 0}
+      snapOffsetDelta: {x: 0, y: 25}
       snapCorner: 0
       layout: 4
       size: {x: 0, y: 0}
@@ -1727,30 +3079,16 @@ MonoBehaviour:
       layout: 4
       size: {x: 0, y: 0}
       sizeOverridden: 0
-    - dockPosition: 0
-      containerId: overlay-toolbar__right
-      displayed: 1
-      id: AINavigationOverlay
-      index: 0
-      contents: '{"m_Layout":4,"m_Collapsed":false,"m_Floating":false,"m_FloatingSnapOffset":{"x":-196.0,"y":-242.0},"m_SnapOffsetDelta":{"x":0.0,"y":0.0},"m_FloatingSnapCorner":3,"m_Size":{"x":0.0,"y":0.0},"m_SizeOverridden":false}'
-      floating: 0
-      collapsed: 1
-      snapOffset: {x: -196, y: -242}
-      snapOffsetDelta: {x: 0, y: 0}
-      snapCorner: 3
-      layout: 4
-      size: {x: 0, y: 0}
-      sizeOverridden: 0
     - dockPosition: 1
       containerId: overlay-container--right
-      displayed: 0
-      id: Scene View/Sprite Swap
+      displayed: 1
+      id: AINavigationOverlay
       index: 9
-      contents: '{"m_Layout":4,"m_Collapsed":false,"m_Floating":false,"m_FloatingSnapOffset":{"x":0.0,"y":0.0},"m_SnapOffsetDelta":{"x":24.0,"y":25.0},"m_FloatingSnapCorner":0,"m_Size":{"x":0.0,"y":0.0},"m_SizeOverridden":false}'
+      contents: '{"m_Layout":4,"m_Collapsed":false,"m_Floating":false,"m_FloatingSnapOffset":{"x":24.0,"y":25.0},"m_SnapOffsetDelta":{"x":0.0,"y":0.0},"m_FloatingSnapCorner":0,"m_Size":{"x":0.0,"y":0.0},"m_SizeOverridden":false}'
       floating: 0
       collapsed: 0
-      snapOffset: {x: 0, y: 0}
-      snapOffsetDelta: {x: 24, y: 25}
+      snapOffset: {x: 24, y: 25}
+      snapOffsetDelta: {x: 0, y: 0}
       snapCorner: 0
       layout: 4
       size: {x: 0, y: 0}
@@ -1758,7 +3096,7 @@ MonoBehaviour:
     - dockPosition: 1
       containerId: overlay-container--right
       displayed: 0
-      id: SceneView/CamerasOverlay
+      id: Scene View/Sprite Swap
       index: 10
       contents: '{"m_Layout":4,"m_Collapsed":false,"m_Floating":false,"m_FloatingSnapOffset":{"x":0.0,"y":0.0},"m_SnapOffsetDelta":{"x":24.0,"y":25.0},"m_FloatingSnapCorner":0,"m_Size":{"x":0.0,"y":0.0},"m_SizeOverridden":false}'
       floating: 0
@@ -1772,7 +3110,7 @@ MonoBehaviour:
     - dockPosition: 1
       containerId: overlay-container--right
       displayed: 0
-      id: Scene View/PBR Validation Settings
+      id: SceneView/CamerasOverlay
       index: 11
       contents: '{"m_Layout":4,"m_Collapsed":false,"m_Floating":false,"m_FloatingSnapOffset":{"x":0.0,"y":0.0},"m_SnapOffsetDelta":{"x":24.0,"y":25.0},"m_FloatingSnapCorner":0,"m_Size":{"x":0.0,"y":0.0},"m_SizeOverridden":false}'
       floating: 0
@@ -1786,8 +3124,22 @@ MonoBehaviour:
     - dockPosition: 1
       containerId: overlay-container--right
       displayed: 0
-      id: Scene View/TrailRenderer
+      id: Scene View/PBR Validation Settings
       index: 12
+      contents: '{"m_Layout":4,"m_Collapsed":false,"m_Floating":false,"m_FloatingSnapOffset":{"x":0.0,"y":0.0},"m_SnapOffsetDelta":{"x":24.0,"y":25.0},"m_FloatingSnapCorner":0,"m_Size":{"x":0.0,"y":0.0},"m_SizeOverridden":false}'
+      floating: 0
+      collapsed: 0
+      snapOffset: {x: 0, y: 0}
+      snapOffsetDelta: {x: 24, y: 25}
+      snapCorner: 0
+      layout: 4
+      size: {x: 0, y: 0}
+      sizeOverridden: 0
+    - dockPosition: 1
+      containerId: overlay-container--right
+      displayed: 0
+      id: Scene View/TrailRenderer
+      index: 13
       contents: '{"m_Layout":4,"m_Collapsed":false,"m_Floating":false,"m_FloatingSnapOffset":{"x":0.0,"y":0.0},"m_SnapOffsetDelta":{"x":24.0,"y":25.0},"m_FloatingSnapCorner":0,"m_Size":{"x":0.0,"y":0.0},"m_SizeOverridden":false}'
       floating: 0
       collapsed: 0
@@ -1824,9 +3176,9 @@ MonoBehaviour:
   m_AudioPlay: 0
   m_DebugDrawModesUseInteractiveLightBakingData: 0
   m_Position:
-    m_Target: {x: -0.90584195, y: -0.45015436, z: -0.01202512}
+    m_Target: {x: -1.7363958, y: 4.129378, z: 0.04386538}
     speed: 2
-    m_Value: {x: -0.92652917, y: -0.40207058, z: -0.014501996}
+    m_Value: {x: -1.7363958, y: 4.129378, z: 0.04386538}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1876,9 +3228,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 5.2564797
+    m_Target: 5.6134267
     speed: 2
-    m_Value: 5.504167
+    m_Value: 5.6134267
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -1930,10 +3282,10 @@ MonoBehaviour:
     m_TextWithWhitespace: "Game\u200B"
   m_Pos:
     serializedVersion: 2
-    x: 291
+    x: 270
     y: 79
-    width: 441
-    height: 545
+    width: 1340
+    height: 613
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -1951,7 +3303,7 @@ MonoBehaviour:
   m_ShowGizmos: 0
   m_TargetDisplay: 0
   m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
-  m_TargetSize: {x: 441, y: 248}
+  m_TargetSize: {x: 1920, y: 1080}
   m_TextureFilterMode: 0
   m_TextureHideFlags: 61
   m_RenderIMGUI: 1
@@ -1960,22 +3312,22 @@ MonoBehaviour:
   m_VSyncEnabled: 0
   m_Gizmos: 0
   m_Stats: 0
-  m_SelectedSizes: 01000000000000000000000000000000000000000000000000000000000000000000000000000000
+  m_SelectedSizes: 03000000000000000000000000000000000000000000000000000000000000000000000000000000
   m_ZoomArea:
     m_HRangeLocked: 0
     m_VRangeLocked: 0
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
-    m_HBaseRangeMin: -220.5
-    m_HBaseRangeMax: 220.5
-    m_VBaseRangeMin: -124
-    m_VBaseRangeMax: 124
+    m_HBaseRangeMin: -960
+    m_HBaseRangeMax: 960
+    m_VBaseRangeMin: -540
+    m_VBaseRangeMax: 540
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
     m_VAllowExceedBaseRangeMax: 1
     m_ScaleWithWindow: 0
-    m_HSlider: 1
+    m_HSlider: 0
     m_VSlider: 0
     m_IgnoreScrollWheelUntilClicked: 0
     m_EnableMouseInput: 1
@@ -1987,23 +3339,23 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 21
-      width: 441
-      height: 524
-    m_Scale: {x: 1.2298737, y: 1.2298737}
-    m_Translation: {x: 244.90086, y: 262}
+      width: 1340
+      height: 592
+    m_Scale: {x: 0.54814816, y: 0.54814816}
+    m_Translation: {x: 670, y: 296}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -199.12685
-      y: -213.03001
-      width: 358.57343
-      height: 426.06003
+      x: -1222.2972
+      y: -540
+      width: 2444.5945
+      height: 1080
     m_MinimalGUI: 1
-  m_defaultScale: 1
-  m_LastWindowPixelSize: {x: 441, y: 545}
+  m_defaultScale: 0.54814816
+  m_LastWindowPixelSize: {x: 1340, y: 613}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000000000000
@@ -2031,9 +3383,9 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 650
-    width: 1024
-    height: 24
+    y: 718
+    width: 2020
+    height: 268
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
