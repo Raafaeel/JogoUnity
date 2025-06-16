@@ -113,11 +113,19 @@ MonoBehaviour:
   trigger: 2
   oneTimeOnly: 0
   commands:
-  - rid: 8798019727077933118
+  - rid: 8798019727077933119
+  - rid: 8798019727077933120
   references:
     version: 2
     RefIds:
-    - rid: 8798019727077933118
+    - rid: 8798019727077933119
+      type: {class: StartDialogue, ns: Core, asm: Scripts}
+      data:
+        dialogueLines:
+        - sprite: {fileID: 6195653668415898635, guid: f285ebbbb249d5a4191b0d78c0b1fa74, type: 3}
+          name: Kana-Chan, Imperatriz dos Slimes
+          message: Quem te deixou entrar???!
+    - rid: 8798019727077933120
       type: {class: BattleCommand, ns: Core, asm: Scripts}
       data:
         battleID: 5
