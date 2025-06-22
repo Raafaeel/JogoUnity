@@ -35,7 +35,7 @@ namespace Core
 
         public void EndBattle()
         {
-            SceneLoader.LoadNextSceneAfterBattle();
+            SceneLoader.ReturnToPreviousScene();
             stateManager.RestorePreviousState();
         }
 
