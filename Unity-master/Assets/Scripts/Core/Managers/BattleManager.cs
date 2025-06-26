@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Battle;
+using UnityEngine.SceneManagement;
 
 namespace Core
 {
@@ -35,7 +36,7 @@ namespace Core
 
         public void EndBattle()
         {
-            SceneLoader.ReloadSavedSceneAfterBattle();
+            SceneManager.LoadScene("BattleVictory");
             stateManager.RestorePreviousState();
         }
 
