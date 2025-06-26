@@ -64,5 +64,11 @@ namespace Core
             Transfer transfer = transfers.Where(transfer => transfer.Id == destinationId).ToList().FirstOrDefault();
             Game.Player.transform.position = (transfer.Cell + transfer.Offset).Center2D();
         }  
+
+        public void UpdateMap(Map newMap)
+        {
+            Map = newMap;
+            Debug.Log($"[MapManager] Mapa atualizado para: {newMap.name}");
+        }  
     }
 }
